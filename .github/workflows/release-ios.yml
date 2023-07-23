@@ -1,12 +1,14 @@
 name: release-ios
 
 on:
-  workflow_run:
-    workflows:
-      - daily-build
-    types:
-      - completed
-  workflow_dispatch:
+  branches:
+    - 'feature-ios-release'
+#  workflow_run:
+#    workflows:
+#      - daily-build
+#    types:
+#      - completed
+#  workflow_dispatch:
 jobs:
   release-ios:
     runs-on: ubuntu-latest
