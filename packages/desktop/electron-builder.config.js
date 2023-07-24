@@ -6,7 +6,7 @@ module.exports = {
     'main': 'dist/app.js',
     'version': process.env.VERSION,
   },
-  'appId': 'so.onekey.wallet.desktop',
+  'appId': 'com.github.longwallet.desktop',
   'productName': 'OneKey',
   'copyright': 'Copyright © ${author}',
   'asar': true,

@@ -194,10 +194,10 @@ class AppUpdates {
         });
         break;
       case 'GooglePlay':
-        canOpenURL('market://details?id=so.onekey.app.wallet').then(
+        canOpenURL('market://details?id=com.github.longwallet.app').then(
           (supported) => {
             if (supported) {
-              LinkingOpenURL('market://details?id=so.onekey.app.wallet');
+              LinkingOpenURL('market://details?id=com.github.longwallet.app');
             } else {
               LinkingOpenURL(versionInfo.package.download);
             }
@@ -213,13 +213,13 @@ class AppUpdates {
               );
               return null;
             }
-            return canOpenURL('market://details?id=so.onekey.app.wallet');
+            return canOpenURL('market://details?id=com.github.longwallet.app');
           })
           .then((supported) => {
             if (!supported) return null;
 
             if (supported) {
-              LinkingOpenURL('market://details?id=so.onekey.app.wallet');
+              LinkingOpenURL('market://details?id=com.github.longwallet.app');
             } else {
               LinkingOpenURL(versionInfo.package.download);
             }

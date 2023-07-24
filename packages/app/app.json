@@ -18,8 +18,8 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "so.onekey.wallet",
-      "associatedDomains": ["applinks:app.onekey.so"]
+      "bundleIdentifier": "com.github.longwallet.app",
+      "associatedDomains": ["applinks:app.longwallet.org"]
     },
     "android": {
       "googleServicesFile": "./android/app/google-services.json",
@@ -33,7 +33,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "640c3c38-d160-48c3-b4a3-40d4fc8aeb08"
+        "projectId": "cbdffa9d-4217-43b4-aec7-c2961f4821e6"
       }
     }
   }
