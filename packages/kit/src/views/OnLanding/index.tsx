@@ -13,7 +13,7 @@ export default function OnLanding() {
   const intl = useIntl();
   const onAndroidDownload = useCallback(() => {
     openUrlExternal(
-      'https://play.google.com/store/apps/details?id=com.github.longwallet.app',
+      'https://play.google.com/store/apps/details?id=com.github.digitalpassport.app',
     );
   }, []);
   const oniOSDownload = useCallback(() => {
