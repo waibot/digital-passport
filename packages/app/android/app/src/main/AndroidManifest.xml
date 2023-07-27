@@ -31,7 +31,7 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
       <intent-filter>
-        <data android:scheme="so.onekey.app.wallet"/>
+        <data android:scheme="com.github.digitalpassport.app"/>
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>

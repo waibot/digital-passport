@@ -365,7 +365,7 @@
   "action_unstake": "赎回",
   "alert__some_of_words_you_typed_are_wrong": "您输入的某个助记词有误。",
   "alert_only_use_a_recovery_seed_from_device": "您应该仅使用设备在设置时显示的助记词。",
-  "app__app_name": "OneKey",
+  "app__app_name": "DigitalPassport",
   "app__hardware_name_onekey_lite": "OneKey Lite",
   "asset__collectibles": "NFT",
   "asset__collectibles_empty_desc": "您拥有的 NFT 将会在这里展示",

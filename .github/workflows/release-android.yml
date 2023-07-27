@@ -75,7 +75,7 @@ jobs:
         with:
           versionCode: ${{ env.BUILD_NUMBER }}
           versionName: ${{ steps.dotenv.outputs.version }}
-          packageName: 'com.github.longwallet.app'
+          packageName: 'com.github.digitalpassport.app'
           android_dir: ./packages/app
 
       - name: Write .env.version

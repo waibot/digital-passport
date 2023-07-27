@@ -50,7 +50,7 @@ export const openAppReview = async (unlimitedTimes?: boolean) => {
 };
 
 const APP_STORE_LINK = `itms-apps://apps.apple.com/app/id1609559473?action=write-review`;
-const PLAY_STORE_LINK = `market://details?id=com.github.longwallet.app`;
+const PLAY_STORE_LINK = `market://details?id=com.github.digitalpassport.app`;
 
 export const openAppStoryWriteReview = () => {
   const STORY_LINK = Platform.select({

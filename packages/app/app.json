@@ -1,9 +1,9 @@
 {
   "expo": {
-    "scheme": "onekey-wallet",
-    "name": "OneKey Wallet",
-    "slug": "OneKey-Wallet",
-    "owner": "onekeyhq",
+    "scheme": "digital-passport",
+    "name": "Digital Passport",
+    "slug": "Digital-Passport",
+    "owner": "wai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,11 +15,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.github.longwallet.app",
-      "associatedDomains": ["applinks:app.longwallet.org"]
+      "bundleIdentifier": "com.github.digitalpassport.app",
+      "associatedDomains": [
+        "applinks:app.longwallet.org"
+      ]
     },
     "android": {
       "googleServicesFile": "./android/app/google-services.json",
