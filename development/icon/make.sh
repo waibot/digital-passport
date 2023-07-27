@@ -59,7 +59,7 @@ echo PROJECT_DIR: $PROJECT_DIR
 echo DESKTOP_DIR: $DESKTOP_DIR
 
 SRC_PNG=${CUR_DIR}/favicon_web_1024x1024.png
-BG_PNG=${CUR_DIR}/background.png
+BG_PNG=${CUR_DIR}/desktop/background.png
 
 ##=========>>> WEB
 sips -z 1024 1024     $SRC_PNG --out $PROJECT_DIR/packages/web/public/static/images/icons/favicon/favicon.png
@@ -154,3 +154,20 @@ sips -z 72 72   $CUR_DIR/android/mipmap-xxxhdpi/ic_launcher.png --out $ADR_RES_D
 sips -z 72 72   $CUR_DIR/android/mipmap-xxxhdpi/ic_launcher_round.png --out $ADR_RES_DIR/mipmap-hdpi/ic_launcher_round.png
 sips -z 162 162   $CUR_DIR/android/mipmap-xxxhdpi/ic_launcher_background.png --out $ADR_RES_DIR/mipmap-hdpi/ic_launcher_background.png
 sips -z 162 162   $CUR_DIR/android/mipmap-xxxhdpi/ic_launcher_foreground.png --out $ADR_RES_DIR/mipmap-hdpi/ic_launcher_foreground.png
+
+
+##=========>>> EXT
+EXT_RES_DIR=$PROJECT_DIR/packages/ext/src/assets/img
+
+cp -a $CUR_DIR/ext/* $EXT_RES_DIR/
+
+##=========>>> KIT
+KIT_RES_DIR=$PROJECT_DIR/packages/kit/assets
+
+cp $CUR_DIR/ext/logo.svg $KIT_RES_DIR/splash.svg
+cp $CUR_DIR/ios/splash_1284x2778.png $KIT_RES_DIR/splash.png
+
+##=========>>> Components
+CP_RES_DIR=$PROJECT_DIR/packages/components/svg/illus
+cp $CUR_DIR/components/* $CP_RES_DIR/
+

@@ -15,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover"
     />
-    <title>OneKey</title>
+    <title>DigitalPassport</title>
       <% if ( isDev ) { %>
         <script
           src="/react-render-tracker@0.7.3/dist/react-render-tracker.js"
@@ -106,14 +106,27 @@
 
     <!-- The root element for your Expo app.  -->
     <div id="root"></div>
-
     <% if ( platform !== 'webEmbed' ) { %>
-    <img
-        width='80'
-        class="onekey-index-html-preload-image"
-        style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%)"
-        src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NTkyMl84OCkiPgo8cGF0aCBkPSJNMTI3LjYxIDYzLjgwNDlDMTI3LjYxIDEwNy44NTMgMTA3Ljg1MyAxMjcuNjEgNjMuODA0OSAxMjcuNjFDMTkuNzU2OCAxMjcuNjEgMCAxMDcuODUzIDAgNjMuODA0OUMwIDE5Ljc1NjggMTkuNzU2OCAwIDYzLjgwNDkgMEMxMDcuODUzIDAgMTI3LjYxIDE5Ljc1NjggMTI3LjYxIDYzLjgwNDlaIiBmaWxsPSIjM0JEMjNEIi8+CjxwYXRoIGQ9Ik02OS41Njk5IDI3LjA1NTdMNTEuODE5NyAyNy4wNTU3TDQ4LjcwNTYgMzYuNDcxOUg1OC41NjQ1TDU4LjU2NDUgNTYuMzA2M0g2OS41Njk5VjI3LjA1NTdaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTg0LjA0ODYgODAuMzExMUM4NC4wNDg2IDkxLjQ5MTIgNzQuOTg1NCAxMDAuNTU0IDYzLjgwNTMgMTAwLjU1NEM1Mi42MjUzIDEwMC41NTQgNDMuNTYyMSA5MS40OTEyIDQzLjU2MjEgODAuMzExMUM0My41NjIxIDY5LjEzMTEgNTIuNjI1MyA2MC4wNjc4IDYzLjgwNTMgNjAuMDY3OEM3NC45ODU0IDYwLjA2NzggODQuMDQ4NiA2OS4xMzExIDg0LjA0ODYgODAuMzExMVpNNzQuODU4NCA4MC4zMTExQzc0Ljg1ODQgODYuNDE1NSA2OS45MDk3IDkxLjM2NDEgNjMuODA1MyA5MS4zNjQxQzU3LjcwMDggOTEuMzY0MSA1Mi43NTIyIDg2LjQxNTUgNTIuNzUyMiA4MC4zMTExQzUyLjc1MjIgNzQuMjA2NiA1Ny43MDA4IDY5LjI1OCA2My44MDUzIDY5LjI1OEM2OS45MDk3IDY5LjI1OCA3NC44NTg0IDc0LjIwNjYgNzQuODU4NCA4MC4zMTExWiIgZmlsbD0iYmxhY2siLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF80NTkyMl84OCI+CjxyZWN0IHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo='
-    />
+      <img
+              width='80'
+              class="onekey-index-html-preload-image"
+              style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%)"
+              src='data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICB3aWR0aD0iMTI4LjAwMDAwMCIgaGVpZ2h0PSIxMjguMDAwMDAwIiB2aWV3Qm94PSIwIDAgMTI4LjAwMDAwMCAxMjguMDAwMDAwIgogICAgIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTI4LjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKICAgICAgIGZpbGw9IiMyQzY5OEQiIHN0cm9rZT0ibm9uZSI+CiAgICAgICAgPHBhdGggZD0iTTU0NCAxMjcxIGMtMjQ4IC00MCAtNDU0IC0yMjcgLTUyMCAtNDcyIC0yMiAtODMgLTIzIC0yMzQgLTEgLTMxNgo1OCAtMjIwIDIyNyAtMzkyIDQ1MyAtNDU5IDgwIC0yNCAyNDggLTI0IDMyOCAwIDIyNiA2NyAzOTMgMjM2IDQ1MiA0NTcgMjIgODQKMjIgMjM0IDAgMzE4IC01OCAyMTggLTIyNiAzOTAgLTQ0NCA0NTQgLTY1IDIwIC0yMDAgMjggLTI2OCAxOHogbTI2MyAtMzkxCmMyOSAtMTkgNDQgLTU0IDUwIC0xMjAgOCAtOTAgLTggLTEzMSAtNzggLTE4OSAtMzQgLTI5IC03NCAtNTMgLTk0IC01NyAtMjQKLTQgLTM1IC0xMiAtMzkgLTMwIC00IC0xMyAtMjkgLTQyIC01NyAtNjQgLTQzIC0zNCAtNTggLTQwIC05OSAtNDAgLTgwIDAgLTgwCjEgLTgwIDIzMiBsMCAyMDEgNDggNDQgNDcgNDQgMTQwIC0zIGMxMDAgLTIgMTQ2IC03IDE2MiAtMTh6Ii8+CiAgICAgICAgPHBhdGggZD0iTTUwNCA4NzcgYy0yIC03IC0zIC0xMDIgLTIgLTIxMiBsMyAtMjAwIDYwIDAgNjAgMCAzIDU2IDMgNTYgNzMgNgpjMTE4IDkgMTM2IDMwIDEzNiAxNTggMCA5MyAtOSAxMTUgLTU1IDEzNSAtNDYgMTkgLTI3MyAyMCAtMjgxIDF6IG0yNjEgLTYyCmMyMSAtMjAgMjUgLTM0IDI1IC04MCAwIC00NiAtNCAtNjAgLTI1IC04MCAtMjIgLTIyIC0zMiAtMjUgLTEwNSAtMjUgbC04MCAwCjAgLTU1IGMwIC0zMCAtNCAtNTUgLTEwIC01NSAtMTEgMCAtMTQgMzAyIC0zIDMxMyAzIDQgNDQgNyA5MCA3IDc2IDAgODYgLTIKMTA4IC0yNXoiLz4KICAgICAgICA8cGF0aCBkPSJNNTgwIDczNSBsMCAtOTUgODAgMCBjOTggMCAxMjAgMTUgMTIwIDgzIDAgOTEgLTIwIDEwNyAtMTMwIDEwNwpsLTcwIDAgMCAtOTV6IG0xMzUgMCBjMCAtNDAgMCAtNDAgLTQyIC00MyBsLTQzIC0zIDAgNDYgMCA0NiA0MyAtMyBjNDIgLTMgNDIKLTMgNDIgLTQzeiIvPgogICAgPC9nPgo8L3N2Zz4K'
+      />
+
+      <% if ( platform !== 'ext' ) { %>
+        <a class="index-html-preload-download" href='https://github.com' style='position: fixed;display: none;bottom: 24px;text-align: center;width: 100%' target='_blank'>
+          Download Desktop
+        </a>
+        <script>
+          setTimeout(()=>{
+            if(!document.querySelector('#root') || document.querySelector('#root').innerHTML === ""){
+              document.querySelector('.index-html-preload-download').style.display = "block"
+            }
+          },5000)
+        </script>
+      <% } %>
+
     <% } %>
 
   </body>
