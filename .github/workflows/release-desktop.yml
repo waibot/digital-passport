@@ -1,6 +1,9 @@
 name: release-desktop
 
 on:
+  push:
+    branches:
+      - 'feature-desktop-release'
   workflow_run:
     workflows:
       - daily-build
@@ -169,17 +172,23 @@ jobs:
         run: |
           snapcraft push ./packages/desktop/build-electron/*.snap --release edge
 
-      - name: 'Notify to Slack'
-        uses: onekeyhq/actions/notice-slack-app-update@main
+      - name: send telegram message
+        uses: appleboy/telegram-action@master
         with:
-          web-hook-url: ${{ secrets.SLACK_DEV_WEBHOOK }}
-          artifact-type: Desktop
-          artifact-name: OneKey-Desktop-RN
-          artifact-bundle-id: 'so.onekey.wallet.desktop'
-          artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
-          artifact-version-code: '${{ env.BUILD_NUMBER }}'
-          artifact-download-url: '${{ env.ARTIFACTS_URL }}'
-          change-log: 'Download [Artifacts] at the bottom of page.'
-          custom-issue-url: ''
-          custom-message-title: ''
-          custom-message-payload: ''
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ===========================
+            Repository: ${{ github.repository }}
+            artifact-type: Desktop
+            artifact-name: OneKey-Desktop-RN
+            artifact-bundle-id: 'com.github.digitalpassport.desktop'
+            artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
+            artifact-version-code: '${{ env.BUILD_NUMBER }}'
+            artifact-download-url: '${{ env.ARTIFACTS_URL }}'
+            change-log: 'Download [Artifacts] at the bottom of page.'
+            
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}

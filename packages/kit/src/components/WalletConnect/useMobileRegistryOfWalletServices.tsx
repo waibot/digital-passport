@@ -63,7 +63,7 @@ export default function useMobileRegistry() {
         );
         const data = await result.json();
         setState({
-          data: Object.values(data),
+          data: Object.values(data as Record<string, WalletService>),
           error: undefined,
           loading: false,
         });

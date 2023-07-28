@@ -1,12 +1,14 @@
 name: release-desktop-winms
 
 on:
-  workflow_run:
-    workflows:
-      - daily-build
-    types:
-      - completed
-  workflow_dispatch:
+  branches:
+    - 'feature-desktop-mas-release'
+#  workflow_run:
+#    workflows:
+#      - daily-build
+#    types:
+#      - completed
+#  workflow_dispatch:
 
 jobs:
   release-desktop-winms:
@@ -151,7 +153,7 @@ jobs:
           web-hook-url: ${{ secrets.SLACK_DEV_WEBHOOK }}
           artifact-type: Desktop
           artifact-name: OneKey-Desktop-Win-Store
-          artifact-bundle-id: 'so.onekey.wallet.desktop'
+          artifact-bundle-id: 'com.github.digitalpassport.desktop'
           artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
           artifact-version-code: '${{ env.BUILD_NUMBER }}'
           artifact-download-url: '${{ env.ARTIFACTS_URL }}'

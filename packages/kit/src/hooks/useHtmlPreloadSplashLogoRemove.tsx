@@ -7,6 +7,10 @@ export function useHtmlPreloadSplashLogoRemove(options?: {
 }) {
   useEffect(() => {
     if (platformEnv.isRuntimeBrowser) {
+      const download = document.querySelector('.index-html-preload-download');
+      if (download) {
+        download.remove();
+      }
       const img = document.querySelector('.onekey-index-html-preload-image');
       if (options?.isDelay) {
         // splash logo is disabled in extension, so we need more delay to wait home ui ready

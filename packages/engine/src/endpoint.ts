@@ -3,9 +3,10 @@ const endpointsMap: Record<
   { prd: string; test: string }
 > = {
   fiat: {
-    prd: 'https://api.onekeycn.com/api',
-    test: 'https://api-sandbox.onekeytest.com/api',
-    // test: 'http://127.0.0.1:9000/api',
+    // prd: 'https://api.onekeycn.com/api',
+    prd: 'https://dp-api.wai.chat/api',
+    // test: 'https://api-sandbox.onekeytest.com/api',
+    test: 'http://localhost:4083/api',
   },
   wss: {
     prd: 'wss://api.onekeycn.com',
