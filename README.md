@@ -12,7 +12,7 @@
 
 [![Appstore](https://github.com/rayston92/graph_bed/blob/275d053220d5b54b32b01ce4c4985210951043c5/img/app_store.svg)](https://apps.apple.com/us/app/onekey-open-source-wallet/id1609559473)
 [![Playstore](https://github.com/rayston92/graph_bed/blob/275d053220d5b54b32b01ce4c4985210951043c5/img/play.svg
-)](https://play.google.com/store/apps/details?id=com.github.longwallet.app)
+)](https://play.google.com/store/apps/details?id=com.github.digitalpassport.app)
 
 - [Desktop clients: macOS, Windows & Linux](https://onekey.so/zh_CN/download?client=desktop)
 - [Browser extensions: Chrome, Firefox, Edge & Brave](https://onekey.so/zh_CN/download?client=browserExtension)

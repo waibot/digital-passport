@@ -23,6 +23,9 @@ const jsRules = {
   // 'no-console': [isDev ? 'warn' : 'off'],
 };
 const tsRules = {
+  '@typescript-eslint/no-unsafe-call': 'off',
+  '@typescript-eslint/no-unsafe-member-access': 'off',
+  '@typescript-eslint/require-await': 'off',
   '@typescript-eslint/default-param-last': 'off',
   '@typescript-eslint/consistent-type-imports': [
     'error',
