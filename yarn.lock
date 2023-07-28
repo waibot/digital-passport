@@ -6426,21 +6426,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@onekeyhq/worker-chain@workspace:packages/worker-chain":
-  version: 0.0.0-use.local
-  resolution: "@onekeyhq/worker-chain@workspace:packages/worker-chain"
-  languageName: unknown
-  linkType: soft
-
 "@onekeyhq/worker-exchange@workspace:packages/worker-exchange":
   version: 0.0.0-use.local
   resolution: "@onekeyhq/worker-exchange@workspace:packages/worker-exchange"
-  languageName: unknown
-  linkType: soft
-
-"@onekeyhq/worker-web3@workspace:packages/worker-web3":
-  version: 0.0.0-use.local
-  resolution: "@onekeyhq/worker-web3@workspace:packages/worker-web3"
   languageName: unknown
   linkType: soft
 
