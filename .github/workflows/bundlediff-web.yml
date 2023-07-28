@@ -2,7 +2,7 @@ name: bundlediff-web
 
 on:
   pull_request:
-    branches: [onekey]
+    branches: [onekey1]
 
 # Cancel a currently running workflow from the same PR/branch/tag
 # when a new workflow is triggered

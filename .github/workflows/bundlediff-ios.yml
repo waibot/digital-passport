@@ -2,7 +2,7 @@ name: bundlediff-ios
 
 on:
   pull_request:
-    branches: [onekey]
+    branches: [onekey1]
 
 # Cancel a currently running workflow from the same PR/branch/tag
 # when a new workflow is triggered
@@ -82,7 +82,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           always-auth: true
           scope: '@onekeyhq'
-          
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
