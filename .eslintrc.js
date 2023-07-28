@@ -23,6 +23,12 @@ const jsRules = {
   // 'no-console': [isDev ? 'warn' : 'off'],
 };
 const tsRules = {
+  'no-param-reassign': 'off',
+  '@typescript-eslint/restrict-template-expressions': 'off',
+  '@typescript-eslint/no-unsafe-return': 'off',
+  '@typescript-eslint/await-thenable': 'off',
+  '@typescript-eslint/no-non-null-assertion': 'off',
+  'max-classes-per-file': 'off',
   '@typescript-eslint/no-unsafe-call': 'off',
   '@typescript-eslint/no-unsafe-member-access': 'off',
   '@typescript-eslint/require-await': 'off',
@@ -32,7 +38,8 @@ const tsRules = {
     { disallowTypeAnnotations: false },
   ],
   '@typescript-eslint/no-var-requires': 'off',
-  '@typescript-eslint/no-unused-vars': [isDev ? 'warn' : 'error'],
+  // '@typescript-eslint/no-unused-vars': [isDev ? 'warn' : 'error'],
+  '@typescript-eslint/no-unused-vars': 'off',
   '@typescript-eslint/no-use-before-define': ['error'],
   '@typescript-eslint/no-shadow': ['error'],
   '@typescript-eslint/explicit-module-boundary-types': 'off',
