@@ -197,7 +197,7 @@ function handleReleaseInfo(
 export async function getReleaseInfo(): Promise<PackagesInfo | null> {
   const key = Math.random().toString();
   return axios
-    .get<AppReleases>(`https://data.onekey.so/config.json?nocache=${key}`)
+    .get<AppReleases>(`https://dp-data.wai.chat/config.json?nocache=${key}`)
     .then((releasesVersionResponse) => {
       const releasesVersion = releasesVersionResponse.data;
       return handleReleaseInfo(releasesVersion);
@@ -207,7 +207,7 @@ export async function getReleaseInfo(): Promise<PackagesInfo | null> {
 export async function getPreReleaseInfo(): Promise<PackagesInfo | null> {
   const key = Math.random().toString();
   return axios
-    .get<AppReleases>(`https://data.onekey.so/pre-config.json?nocache=${key}`)
+    .get<AppReleases>(`https://dp-data.wai.chat/pre-config.json?nocache=${key}`)
     .then((releasesVersionResponse) => {
       const releasesVersion = releasesVersionResponse.data;
       return handleReleaseInfo(releasesVersion);
@@ -221,9 +221,9 @@ export async function getChangeLog(
 ): Promise<Changelog | undefined> {
   const key = Math.random().toString();
 
-  let changelogUrl = `https://data.onekey.so/config.json`;
+  let changelogUrl = `https://dp-data.wai.chat/config.json`;
   if (isPreRelease) {
-    changelogUrl = `https://data.onekey.so/pre-config.json`;
+    changelogUrl = `https://dp-data.wai.chat/pre-config.json`;
   }
 
   return axios
