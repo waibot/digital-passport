@@ -58,8 +58,6 @@ export interface ElectronApi {
 }
 
 export abstract class BaseConnection {
-  constructor(public id: string) {}
-
   abstract send(message: Buffer): void;
 
   abstract close(): void;

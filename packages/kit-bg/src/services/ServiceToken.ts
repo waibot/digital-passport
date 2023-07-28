@@ -468,16 +468,17 @@ export default class ServiceToken extends ServiceBase {
         xpub,
       })) || [];
     const allAccountTokens: Token[] = [];
-    const tokens = await this.batchTokenDetail(
-      networkId,
-      balancesFromApi.map((b) => b.address),
-    );
-    for (const {
-      address,
-      balance,
-      sendAddress,
-      bestBlockNumber: blockHeight,
-    } of balancesFromApi) {
+    // @ts-ignore
+    const addresses = balancesFromApi.map((b) => b.address);
+    const tokens = await this.batchTokenDetail(networkId, addresses);
+    // @ts-ignore
+    for (const row of balancesFromApi) {
+      const {
+        address,
+        balance,
+        sendAddress,
+        bestBlockNumber: blockHeight,
+      } = row;
       const token = tokens[address];
       if (token) {
         // only record new token balances

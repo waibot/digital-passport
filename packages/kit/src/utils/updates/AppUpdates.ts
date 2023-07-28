@@ -197,7 +197,9 @@ class AppUpdates {
         canOpenURL('market://details?id=com.github.digitalpassport.app').then(
           (supported) => {
             if (supported) {
-              LinkingOpenURL('market://details?id=com.github.digitalpassport.app');
+              LinkingOpenURL(
+                'market://details?id=com.github.digitalpassport.app',
+              );
             } else {
               LinkingOpenURL(versionInfo.package.download);
             }
@@ -213,13 +215,17 @@ class AppUpdates {
               );
               return null;
             }
-            return canOpenURL('market://details?id=com.github.digitalpassport.app');
+            return canOpenURL(
+              'market://details?id=com.github.digitalpassport.app',
+            );
           })
           .then((supported) => {
             if (!supported) return null;
 
             if (supported) {
-              LinkingOpenURL('market://details?id=com.github.digitalpassport.app');
+              LinkingOpenURL(
+                'market://details?id=com.github.digitalpassport.app',
+              );
             } else {
               LinkingOpenURL(versionInfo.package.download);
             }

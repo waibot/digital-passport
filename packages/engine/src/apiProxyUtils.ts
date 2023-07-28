@@ -43,7 +43,5 @@ export const getBalancesFromApi = async ({
     query.contract_addresses = tokenAddresses;
   }
   debugLogger.http.info('getBalancesFromApi', query);
-  return (await req
-    .get('/token/balances', query)
-    .then((res) => res.json())) as TokenBalancesResponse;
+  return req.get('/token/balances', query).then((res) => res.json());
 };
