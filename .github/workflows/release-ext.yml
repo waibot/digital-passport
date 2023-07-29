@@ -1,8 +1,9 @@
 name: release-ext
 
 on:
-  branches:
-    - 'feature-ext-release'
+  push:
+    branches:
+      - 'feature-ext-release'
 #  workflow_run:
 #    workflows:
 #      - daily-build

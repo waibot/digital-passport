@@ -1,8 +1,9 @@
 name: release-ios
 
 on:
-  branches:
-    - 'feature-ios-release'
+  push:
+    branches:
+      - 'feature-ios-release'
 #  workflow_run:
 #    workflows:
 #      - daily-build

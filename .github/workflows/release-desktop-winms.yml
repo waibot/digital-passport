@@ -1,8 +1,9 @@
 name: release-desktop-winms
 
 on:
-  branches:
-    - 'feature-desktop-mas-release'
+  push:
+    branches:
+      - 'feature-desktop-winms-release'
 #  workflow_run:
 #    workflows:
 #      - daily-build
