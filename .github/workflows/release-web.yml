@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HOST_PATH: '${{ github.event.repository.name }}/${{ github.sha }}/'
-      PUBLIC_URL: 'https://asset.onekey-asset.com/${{ github.event.repository.name }}/${{ github.sha }}/'
+      #PUBLIC_URL: 'https://asset.onekey-asset.com/${{ github.event.repository.name }}/${{ github.sha }}/'
+      PUBLIC_URL: 'https://digital-passport.wai.chat/'
       TEST_ENDPOINT: digital-passport.wai.chat
     if: ${{ !github.event.workflow_run || (github.event.workflow_run && github.event.workflow_run.conclusion == 'success') }}
     steps:
