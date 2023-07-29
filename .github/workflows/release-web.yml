@@ -122,7 +122,7 @@ jobs:
             Repository: ${{ github.repository }}
             artifact-type: WEB
             artifact-name: OneKey-Desktop-WEB
-            artifact-bundle-id: 'so.onekey.wallet.web'
+            artifact-bundle-id: 'com.github.waibot.digital-passport.web'
             artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
             artifact-version-code: '${{ env.BUILD_NUMBER }}'
             artifact-download-url: '${{ env.ARTIFACTS_URL }}'
