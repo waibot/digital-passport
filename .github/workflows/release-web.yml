@@ -121,7 +121,7 @@ jobs:
             ===========================
             Repository: ${{ github.repository }}
             artifact-type: WEB
-            artifact-name: OneKey-Desktop-WEB
+            artifact-name: Digital-Passport-WEB
             artifact-bundle-id: 'com.github.waibot.digital-passport.web'
             artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
             artifact-version-code: '${{ env.BUILD_NUMBER }}'
