@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: buildhistory
-      
+
       - name: Get Current Version
         id: current_id
         run: |
@@ -27,13 +27,13 @@ jobs:
       - name: Clone Main Branch
         uses: actions/checkout@v3
         with:
-          ref: onekey
-          path: onekey
-      
+          ref: prod
+          path: prod
+
       - name: Get Upstream Version
         id: upstream_id
         run: |
-          cd onekey
+          cd prod
           echo "upstream_id=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
           echo "upstream_id: $(git rev-parse --short HEAD)"
 
