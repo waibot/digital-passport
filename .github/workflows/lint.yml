@@ -23,13 +23,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        id: pr_info
         with:
           lfs: true
-
-      - name: Get Pull Request Info
-        id: pr_info
-        uses: actions/github-script@v3
-        with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const { data: pull_requests } = await github.pulls.list({
@@ -41,11 +37,8 @@ jobs:
               return pull_requests[0].html_url;
             }
             return '';
-
-          - name: Set PR html_url
-            run: echo "PR_URL=${{ steps.pr_info.outputs.result }}" >> $GITHUB_ENV
-
-
+      - name: Set PR html_url
+        run: echo "PR_URL=${{ steps.pr_info.outputs.result }}" >> $GITHUB_ENV
       - name: Get Date
         id: date
         run: echo "DATE=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
