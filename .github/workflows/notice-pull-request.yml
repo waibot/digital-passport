@@ -1,10 +1,8 @@
 name: Notice Pull Request
 
 on:
-  workflow_run:
-    workflows: ["Lint", "Codacy Security Scan"]
-    types:
-      - completed
+  pull_request:
+    branches: [main]
 
 jobs:
   final_action_job:
@@ -33,6 +31,9 @@ jobs:
 
       - name: Set PR html_url
         run: echo "PR_URL=${{ steps.pr_info.outputs.result }}" >> $GITHUB_ENV
+
+      - name: Echo test
+        run: export
 
       - name: Get Date
         id: date
