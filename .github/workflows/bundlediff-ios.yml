@@ -2,7 +2,7 @@ name: bundlediff-ios
 
 on:
   pull_request:
-    branches: [onekey1]
+    branches: [temp]
 
 # Cancel a currently running workflow from the same PR/branch/tag
 # when a new workflow is triggered

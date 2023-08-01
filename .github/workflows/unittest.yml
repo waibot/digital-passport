@@ -2,7 +2,7 @@ name: unittest
 
 on:
   pull_request:
-    branches: [prod]
+    branches: [main]
 
 # Cancel a currently running workflow from the same PR/branch/tag
 # when a new workflow is triggered
