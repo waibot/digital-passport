@@ -53,17 +53,3 @@ jobs:
         run: |
           npm i -g expo-cli@6.0.8 && yarn --mode=skip-build && yarn patch-package
           yarn lint
-
-      - name: Send telegram message
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            ===========================
-            Code Check OK!
-            Repository: ${{ github.repository }}
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
