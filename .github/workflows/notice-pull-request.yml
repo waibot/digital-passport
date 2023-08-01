@@ -1,0 +1,42 @@
+name: Notice Pull Request
+
+on:
+  workflow_run:
+    workflows: ["lint", "Codacy Security Scan", "unittest"]
+    types:
+      - completed
+
+jobs:
+  final_action_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Pull Request Info
+        id: pr_info
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { data: pull_requests } = await github.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: context.repo.owner + ":" + context.sha
+            });
+            return pull_requests[0] || {};
+      - name: Get Date
+        id: date
+        run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+      - name: Send telegram message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ====>>> ${{ steps.date.outputs.date }}
+            Pull Request
+            Repository: ${{ github.repository }}
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            Pull Request: ${{ steps.pr_info.outputs.data.html_url }}

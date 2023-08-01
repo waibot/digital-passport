@@ -25,7 +25,36 @@ jobs:
       - uses: actions/checkout@v3
         with:
           lfs: true
+      - name: Get Date
+        id: date
+        run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+      - name: Send telegram message
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ====>>> ${{ steps.date.outputs.date }}
+            Lint is starting...
+            Repository: ${{ github.repository }}
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+            Pull Request: ${{ steps.pr_info.outputs.data.html_url }}
 
+      - name: Get Pull Request Info
+        id: pr_info
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { data: pull_requests } = await github.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: context.repo.owner + ":" + context.sha
+            });
+            return pull_requests[0] || {};
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -53,17 +82,3 @@ jobs:
         run: |
           npm i -g expo-cli@6.0.8 && yarn --mode=skip-build && yarn patch-package
           yarn lint
-
-      - name: Send telegram message
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            ===========================
-            Code Check OK!
-            Repository: ${{ github.repository }}
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
