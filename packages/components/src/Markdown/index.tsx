@@ -24,12 +24,14 @@ const Markdown: FC = ({ children }) => {
   // const bgColor = useThemeValue('surface-default');
   const isSmallScreen = useIsVerticalLayout();
   const horizontalRulesColor = useThemeValue('divider');
+  const bg = useThemeValue('background-selected');
 
   const styles = useMemo(
     () =>
       StyleSheet.create({
         body: {
           color: bodyTextColor,
+          lineHeight: 28,
           ...(isSmallScreen
             ? (Body1Props as TextStyle)
             : (Body2Props as TextStyle)),
@@ -37,8 +39,26 @@ const Markdown: FC = ({ children }) => {
         paragraph: {
           marginVertical: 4,
         },
+        code_inline: {
+          paddingVertical: 2,
+          paddingHorizontal: 8,
+          fontWeight: 700,
+        },
+        fence: {
+          marginVertical: 4,
+          paddingVertical: 4,
+          paddingHorizontal: 8,
+          backgroundColor: bg,
+        },
         heading1: {
           marginTop: 12,
+          marginBottom: 4,
+          color: headingColor,
+          ...(DisplayMediumProps as TextStyle),
+        },
+        heading2: {
+          marginTop: 12,
+          marginBottom: 4,
           color: headingColor,
           ...(DisplayMediumProps as TextStyle),
         },
@@ -49,6 +69,7 @@ const Markdown: FC = ({ children }) => {
           ...(DisplaySmallProps as TextStyle),
         },
         list_item: {
+          lineHeight: 28,
           marginVertical: 4,
           flexDirection: 'row',
         },

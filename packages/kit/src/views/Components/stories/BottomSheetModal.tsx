@@ -13,8 +13,16 @@ const showBottomSheetModal = () =>
   ));
 
 const BottomSheetModalGallery = () => (
-  <Box p="20px">
-    <Button onPress={showBottomSheetModal}>Show BottomSheetModal</Button>
+  <Box
+    p="20px"
+    flex={1}
+    display={'flex'}
+    alignItems={'center'}
+    justifyContent={'center'}
+  >
+    <Button width="254px" type="primary" onPress={showBottomSheetModal}>
+      Show BottomSheetModal
+    </Button>
   </Box>
 );
 
