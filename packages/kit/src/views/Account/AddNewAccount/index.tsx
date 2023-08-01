@@ -171,8 +171,8 @@ const CreateAccount: FC<CreateAccountProps> = ({ onClose }) => {
               template,
             );
             setCannotCreateAccountReason('');
-          } catch ({ key, info }: any) {
-            // @ts-ignore
+          } catch (e: any) {
+            const { key, info } = e;
             setCannotCreateAccountReason(intl.formatMessage({ id: key }, info));
           } finally {
             setIsLoading(undefined);

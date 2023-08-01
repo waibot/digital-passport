@@ -36,7 +36,7 @@ const Index = () => {
   const navigation = useNavigation<NavigationProps>();
   const route = useRoute<RouteProps>();
 
-  console.log('route: ', route.params.ts);
+  // console.log('route: ', route.params.ts);
 
   const componentsRoute = Object.values(GalleryRoutes)
     .filter((item) => item.startsWith('component'))

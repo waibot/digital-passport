@@ -128,7 +128,7 @@ class ServiceOverview extends ServiceBase {
     for (const scanType of uniq(
       pendingTasksForCurrentNetwork.map((n) => n.scanType),
     )) {
-      if (!pending.find((p) => p.scanType === scanType)) {
+      if (pending && !pending.find((p) => p.scanType === scanType)) {
         const { data, actions } = this.processNftPriceActions({
           networkId,
           accountId,
@@ -143,7 +143,7 @@ class ServiceOverview extends ServiceBase {
       }
     }
 
-    if (!pending?.length) {
+    if (pending && !pending?.length) {
       const taskIdsWillRemove = pendingTasksForCurrentNetwork
         .map((t) => this.getTaksId(t))
         .filter((id) => !pending.find((p) => p.id === id));
