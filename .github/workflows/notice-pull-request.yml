@@ -24,8 +24,8 @@ jobs:
             });
             return pull_requests[0] || {};
       - name: Get Date
-          id: date
-          run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        id: date
+        run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
       - name: Send telegram message
         uses: appleboy/telegram-action@master
         with:
