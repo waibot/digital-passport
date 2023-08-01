@@ -26,6 +26,7 @@ export class MarketChartAction extends BaseOpenAPIRoute {
         example: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
       }),
       points: Query(Int, {
+        required: false,
         description: '',
         example: '100',
       }),
@@ -40,6 +41,9 @@ export class MarketChartAction extends BaseOpenAPIRoute {
   override async handle(request: Request, data: Record<string, any>) {
     if (data.contract !== undefined && !data.contract) {
       delete data.contract;
+    }
+    if (data.points !== undefined && !data.points) {
+      delete data.points;
     }
     return proxyRequest(request, data);
   }
