@@ -23,13 +23,16 @@ jobs:
               head: context.repo.owner + ":" + context.sha
             });
             return pull_requests[0] || {};
+      - name: Get Date
+          id: date
+          run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
       - name: Send telegram message
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            ===========================
+            ====>>> ${{ steps.date.outputs.date }}
             Pull Request
             Repository: ${{ github.repository }}
             ${{ github.actor }} created commit:
