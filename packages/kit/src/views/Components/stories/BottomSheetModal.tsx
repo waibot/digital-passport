@@ -16,9 +16,9 @@ const BottomSheetModalGallery = () => (
   <Box
     p="20px"
     flex={1}
-    display={'flex'}
-    alignItems={'center'}
-    justifyContent={'center'}
+    display="flex"
+    alignItems="center"
+    justifyContent="center"
   >
     <Button width="254px" type="primary" onPress={showBottomSheetModal}>
       Show BottomSheetModal

@@ -1,4 +1,4 @@
-name: lint
+name: Lint
 
 on:
   pull_request:
@@ -27,7 +27,7 @@ jobs:
           lfs: true
       - name: Get Date
         id: date
-        run: echo "::set-output name=date::$(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+        run: echo "DATE=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_ENV
       - name: Send telegram message
         uses: appleboy/telegram-action@master
         with:

@@ -150,22 +150,20 @@ $$
 其中 $A$ 是一个 $n \\times n$ 的矩阵，$\\mathbf{f}(t)$ 是一个已知的向量函数，$t$ 是时间变量。这是一类常见的线性微分方程系统的形式。
 
       `}</Markdown>
-
-
     </Box>
   );
-  let isLoading = false
+  let isLoading = false;
   const Md2 = () => {
     const [content, setContent] = useState(md);
     const onPress = useCallback(async () => {
-      if(isLoading){
-        return
+      if (isLoading) {
+        return;
       }
       isLoading = true;
       setContent('');
       const mdArr = md.split('');
       let tempTxt = '';
-      for (let i = 0; i < mdArr.length; i++) {
+      for (let i = 0; i < mdArr.length; i += 1) {
         if (mdArr[i] === ' ') {
           await wait(100);
         } else {
