@@ -3,7 +3,7 @@ name: release-web
 on:
   push:
     branches:
-      - 'feature-web-release'
+      - 'feat-web-release'
   workflow_run:
     workflows:
       - daily-build
