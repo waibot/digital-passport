@@ -5996,6 +5996,7 @@ __metadata:
     long: ^5.2.3
     memoizee: ^0.4.15
     mime-types: ^2.1.35
+    minimatch: ^9.0.3
     minimist: ^1.2.8
     mkdirp: ^3.0.1
     mock-aws-s3: ^4.0.2
@@ -6429,6 +6430,12 @@ __metadata:
 "@onekeyhq/worker-exchange@workspace:packages/worker-exchange":
   version: 0.0.0-use.local
   resolution: "@onekeyhq/worker-exchange@workspace:packages/worker-exchange"
+  languageName: unknown
+  linkType: soft
+
+"@onekeyhq/worker-storage@workspace:packages/worker-storage":
+  version: 0.0.0-use.local
+  resolution: "@onekeyhq/worker-storage@workspace:packages/worker-storage"
   languageName: unknown
   linkType: soft
 

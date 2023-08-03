@@ -1,0 +1,41 @@
+#https://developers.cloudflare.com/workers/wrangler/configuration/
+name = "worker-storage"
+main = "src/index.ts"
+compatibility_date = "2022-05-03"
+compatibility_flags = ["streams_enable_constructors"]
+account_id=""
+
+minify = true
+node_compat = true
+
+[dev]
+ip = "localhost"
+port=1237
+
+
+[[kv_namespaces]]
+# binding 的值 需要跟 [vars] / KV_NAMESPACE_BINDING_KEY 一致
+# 在 https://dash.cloudflare.com/ > Workers > KV : Create a namespace
+binding = ""
+id = ""
+preview_id = ""
+
+[vars]
+KV_NAMESPACE_BINDING_KEY="WAI_PROD_1002"
+R2_STORAGE_BINGDING_KEY="STORAGE"
+
+IS_DEV = true
+SERVER_USER_ID_START = "2000"
+Access_Control_Allow_Origin = "*"
+
+OPENAI_API_KEY = ""
+
+WECHAT_APPID = ''
+WECHAT_APPSECRET = ''
+WECHAT_NOTIFY_USER = ''
+WECHAT_NOTIFY_TEMPLATE_ID = ''
+
+DTALK_ACCESS_TOKEN_PAY = ""
+
+TG_BOT_TOKEN_PAY = ""
+TG_BOT_CHAT_ID_PAY = ""

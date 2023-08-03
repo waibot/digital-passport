@@ -1,0 +1,214 @@
+[
+  [
+    {
+      "_id": "634fa07920ec3e25ecd2010c",
+      "name": " Bscex SwapX",
+      "url": "https://swapx.bscex.org/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_b0abc780-eb0e-11ec-8629-f114182c14b1.png.png.png",
+      "status": "Listed",
+      "subtitle": "SwapX is the first AMM Aggregator on Binance Smart Chain",
+      "description": "",
+      "networkIds": [
+        "evm--56"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff28"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.847Z",
+      "updatedAt": "2023-07-12T13:01:05.541Z",
+      "_subtitle": "270776624"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff97",
+      "name": " Pancake Bunny",
+      "url": "https://pancakebunny.finance/farm??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_7270ec50-eb10-11ec-8629-f114182c14b1.png.png",
+      "status": "Listed",
+      "subtitle": "PancakeBunny is a new and rapidly growing DeFi yield aggregator that is used for PancakeSwap.",
+      "description": "",
+      "networkIds": [
+        "evm--56"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff29"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:47:24.599Z",
+      "_subtitle": "270776246"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd20158",
+      "name": " SmartSwap",
+      "url": "https://smartswap.jointer.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_05285fb0-bfc4-11ec-abd8-19c15b6f0acd.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Binance Smart Chain to Ethereum 1:1 swap which creates cross-chain shared pooling between PancakeSwap (BEP20) and UniSwap (ERC20).",
+      "description": "",
+      "networkIds": [
+        "evm--56"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff27"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.847Z",
+      "updatedAt": "2023-07-12T13:03:08.544Z",
+      "_subtitle": "270776686"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff77",
+      "name": "01.xyz",
+      "url": "https://01.xyz/zh/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_e93b69a0-eae8-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Fully decentralized orderbook based derivatives dex allowing users to trade, borrow & lend their crypto assets.",
+      "description": "",
+      "networkIds": [
+        "sol--101",
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:53.473Z",
+      "_subtitle": "270776213"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd20030",
+      "name": "0n1 Force",
+      "url": "https://www.0n1force.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_ffba65e0-0593-11ec-9835-f9d34275b2f4.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "0n1 Force are 7,777 unique collectibles Hand Illustrated.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa053b09822e6cc873018"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.845Z",
+      "updatedAt": "2023-07-12T12:52:42.680Z",
+      "_subtitle": "270776395"
+    },
+    {
+      "_id": "64c91c7e65caa443c46237b9",
+      "name": "0x Protocol ",
+      "url": "https://0x.org/",
+      "logoURL": "https://nft.onekey-asset.com/admin/upload_1690901492142.0.8803880357323053.0.png",
+      "subtitle": "An open protocol that enables the peer-to-peer exchange of assets on the Ethereum blockchain.",
+      "description": "",
+      "status": "Listed",
+      "networkIds": [
+        "evm--1",
+        "evm--137",
+        "evm--43114",
+        "evm--10",
+        "evm--56",
+        "evm--250",
+        "evm--42220"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24"
+      ],
+      "categoryIds": [
+        "634fa057b09822e6cc87303a"
+      ],
+      "createdAt": "2023-08-01T14:53:50.017Z",
+      "updatedAt": "2023-08-01T15:46:19.368Z",
+      "__v": 0,
+      "_subtitle": "358738399"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd200a0",
+      "name": "0xAdventures",
+      "url": "https://0xadventures.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_fed47230-dda9-11ec-a0b5-f7bd232e861e.png.png",
+      "status": "Listed",
+      "subtitle": "Adventure Cards is the first collectable card game stored entirely on chain. Each NFT includes 45 procedurally generated cards.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa053b09822e6cc873018"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.845Z",
+      "updatedAt": "2023-07-12T12:57:00.178Z",
+      "_subtitle": "270776508"
+    },
+    {
+      "_id": "634fa05ab09822e6cc87316d",
+      "name": "0xUniverse",
+      "url": "https://0xuniverse.com?utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/566d9be2413a18d09804877617384183.png",
+      "status": "Listed",
+      "subtitle": "Build your spaceships and colonize planets",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa053b09822e6cc873017"
+      ],
+      "categoryIds": [
+        "634fa057b09822e6cc873039"
+      ],
+      "createdAt": "2022-10-19T06:59:38.267Z",
+      "updatedAt": "2023-07-12T12:45:29.440Z",
+      "_subtitle": "270775912"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ffe8",
+      "name": "10KTF",
+      "url": "https://10ktf.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_c63a3bb0-dcb1-11ec-91fa-c9948dd02d29.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "World-renowned artisan from New Tokyo. Visit my shop, connect your Metamask wallet, and see what I have for you.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa053b09822e6cc873018"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.844Z",
+      "updatedAt": "2023-07-12T12:51:19.798Z",
+      "_subtitle": "270776321"
+    },
+    {
+      "_id": "634fa05ab09822e6cc873087",
+      "name": "1inch",
+      "url": "https://1inch.exchange?utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/ab444599d6c770e6cf04f33547aad2de.png",
+      "status": "Listed",
+      "subtitle": "1inch is a decentralized exchange aggregator",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa053b09822e6cc873015",
+        "634fa053b09822e6cc873011"
+      ],
+      "categoryIds": [
+        "634fa057b09822e6cc87303a"
+      ],
+      "createdAt": "2022-10-19T06:59:38.265Z",
+      "updatedAt": "2023-07-12T12:46:06.457Z",
+      "_subtitle": "270776126"
+    }
+  ]
+]

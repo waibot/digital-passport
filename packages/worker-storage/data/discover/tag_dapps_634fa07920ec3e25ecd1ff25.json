@@ -1,0 +1,1022 @@
+[
+  [
+    {
+      "_id": "648703019df2cf524eb66744",
+      "name": "Daylight",
+      "url": "https://www.daylight.xyz/",
+      "logoURL": "https://nft.onekey-asset.com/admin/upload_1686569728260.0.6462194657502274.0.png",
+      "subtitle": "Never miss a mint, airdrop, or token gate",
+      "description": "",
+      "status": "Listed",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff2f"
+      ],
+      "categoryIds": [],
+      "createdAt": "2023-06-12T11:35:29.358Z",
+      "updatedAt": "2023-06-12T12:07:46.485Z",
+      "__v": 0,
+      "_subtitle": "336579180"
+    },
+    {
+      "_id": "64199bbacbfe888538c3c772",
+      "name": "Arbitrum Foundation",
+      "url": "https://arbitrum.foundation",
+      "logoURL": "https://nft.onekey-asset.com/admin/upload_1679399863339.0.7540050077875533.0.jpeg",
+      "subtitle": "Welcome to the future of Ethereum",
+      "description": "",
+      "status": "Listed",
+      "networkIds": [
+        "evm--42161"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [
+        "63522a884a8ed11c5aafe849"
+      ],
+      "createdAt": "2023-03-21T11:57:46.035Z",
+      "updatedAt": "2023-03-21T11:58:06.693Z",
+      "__v": 0,
+      "_subtitle": "294063581"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff89",
+      "name": "ENS Airdrop",
+      "url": "https://claim.ens.domains/dashboard??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_6db3e980-4127-11ec-9b20-d79899203d9e.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "ENS airdrop pick-up channel",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:47:08.095Z",
+      "_subtitle": "270776235"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff83",
+      "name": "xDAO",
+      "url": "https://app.xdao.app??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_25b741c0-bafa-11ec-88b8-d10d41162d14.png.png",
+      "status": "Listed",
+      "subtitle": "xDAO is an innovative DeFi platform which allows to create Decentralized Autonomous Organizations (DAOs) for the joint management of crypto assets.",
+      "description": "",
+      "networkIds": [
+        "evm--56",
+        "evm--137",
+        "evm--1",
+        "evm--128",
+        "evm--250",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:59.532Z",
+      "_subtitle": "270776224"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff7e",
+      "name": "Klayportal",
+      "url": "https://www.hashquark.io/#/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_7ee0edc0-eaf5-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "HashQuark provides the most secure, stable and convenient enterprise-level staking service",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "sol--101",
+        "near--0"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:57.747Z",
+      "_subtitle": "270776221"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff69",
+      "name": "Yield Protocol",
+      "url": "https://yieldprotocol.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_d1c28af0-eae9-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Yield Protocol brings collateralized fixed-rate,fixed-term borrowing and lending and interest rate markets to decentralized finance.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--42161"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff29",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:49.155Z",
+      "_subtitle": "270776222"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff7b",
+      "name": "RoboVault",
+      "url": "https://www.robo-vault.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_359e6bd0-eaf3-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Single asset automated yield generation on FTM - A cushy home for blue-chip assets.",
+      "description": "",
+      "networkIds": [
+        "evm--250",
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:55.926Z",
+      "_subtitle": "270776219"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff7c",
+      "name": "Risk Harbor",
+      "url": "https://www.riskharbor.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_e75ddcc0-eaf8-11ec-8629-f114182c14b1.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Risk Harbor is a risk management marketplace for decentralized finance (DeFi) that utilizes a completely automated, transparent, and impartial invariant detection mechanism to secure liquidity providers and stakers against smart contract risks, hacks, and attacks.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--42161"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff2e",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:56.495Z",
+      "_subtitle": "270776216"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff77",
+      "name": "01.xyz",
+      "url": "https://01.xyz/zh/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_e93b69a0-eae8-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Fully decentralized orderbook based derivatives dex allowing users to trade, borrow & lend their crypto assets.",
+      "description": "",
+      "networkIds": [
+        "sol--101",
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:53.473Z",
+      "_subtitle": "270776213"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff75",
+      "name": "Polymarket",
+      "url": "https://polymarket.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_ef7beb70-bbc5-11ec-9f25-f3ed29b4d6eb.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Polymarket is an Information Markets platform. Harnessing the power of free markets to demystify the real world events that matter most to you.",
+      "description": "",
+      "networkIds": [
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff2d",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:52.145Z",
+      "_subtitle": "270776209"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff73",
+      "name": "koinswap",
+      "url": "https://koinswap.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_067b5f50-3893-11ed-a459-9f415f55d7ee.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Swap or trade various crypto-assets anytime anywhere in the world in seconds. Get high APY and APR on staking your favorite crypto assets.",
+      "description": "",
+      "networkIds": [
+        "evm--56"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff28"
+      ],
+      "categoryIds": [
+        "63522a884a8ed11c5aafe849"
+      ],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:50.850Z",
+      "_subtitle": "270776208"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff6d",
+      "name": "Katana",
+      "url": "https://app.katana.so/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_a54a8020-eaeb-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Katana is a yield generation protocol on Solana designed to generate sustainable yield from automated option strategies.",
+      "description": "",
+      "networkIds": [
+        "sol--101",
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:49.707Z",
+      "_subtitle": "270776206"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff6e",
+      "name": "Shell Protocol",
+      "url": "https://shellprotocol.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_e584a660-eaec-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Deposit your stablecoins into our liquidity pool and receive shells, a natively liquid, diversified and yield bearing asset.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:43.807Z",
+      "_subtitle": "270776203"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff70",
+      "name": "Gnosis Protocol",
+      "url": "https://gnosis.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_f2091400-eaee-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "Gnosis builds new market mechanisms for decentralized finance.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff27",
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff24"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:44.826Z",
+      "_subtitle": "270776204"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff6a",
+      "name": "Wrapped",
+      "url": "https://wrapped.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_f7218a20-eaea-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Your favorite assets on every blockchain. wrapped.com is a cross-chain institutional bridge. Designed for high-performance and speed.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:42.293Z",
+      "_subtitle": "270776201"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff62",
+      "name": "KLAYstation",
+      "url": "https://orbitchain.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_32520fb0-eae2-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "KLAYstation is a staking tool based on the Klaytn Network, that has now introduced the sKLAY token, a liquid staking solution",
+      "description": "",
+      "networkIds": [
+        "evm--56",
+        "evm--128"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:38.925Z",
+      "_subtitle": "270776196"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff6b",
+      "name": "Crema Finance",
+      "url": "https://www.crema.finance/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_2ccf1b20-eaea-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Crema Finance is a powerful concentrated liquidity protocol built on Solana that provides superior performance for both traders and liquidity providers. It changes the Solana DeFi game by introducing a series of innovations to improve the overall capital efficiency and trading depth.",
+      "description": "",
+      "networkIds": [
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:42.820Z",
+      "_subtitle": "270776197"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff68",
+      "name": "Sturdy",
+      "url": "https://sturdy.finance/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_885eec70-eae7-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Sturdy is a first of its kind DeFi protocol for interest-free borrowing and high yield lending. Rather than charging borrowers interest, Sturdy stakes their collateral and passes the yield to lenders. This model changes the relationship between borrowers and lenders to make Sturdy the first positive-sum lending protocol.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--250"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff29",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:41.731Z",
+      "_subtitle": "270776195"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff65",
+      "name": "Sherlock",
+      "url": "https://www.sherlock.xyz/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_d5814800-eae6-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Sherlock is a risk management protocol whose mission is to make DeFi safe for the masses. Sherlock combines protocol-to-protocol coverage with a decentralized smart contract security team to bring large amounts of affordable coverage to DeFi and beyond",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:40.447Z",
+      "_subtitle": "270776194"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff64",
+      "name": "Superfluid",
+      "url": "https://www.superfluid.finance/home??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_ac3aae60-eae5-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "Programmable Cashflows. Handle subscriptions, salaries, rewards and any composable stream of value, with continuous settlement and per-second netting for extreme capital efficiency.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff27",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:39.944Z",
+      "_subtitle": "270776193"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff63",
+      "name": "Wombat Exchange",
+      "url": "https://www.wombat.exchange/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_5f78f4f0-eadc-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Hyper efficient multi-chain stableswap. #BNB and beyond.",
+      "description": "",
+      "networkIds": [
+        "evm--56"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:39.463Z",
+      "_subtitle": "270776192"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff5a",
+      "name": "Friktion",
+      "url": "https://friktion.fi/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_50fc72c0-ead8-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "Friktion is a crypto-asset portfolio management platform, built to perform across market cycles. Volts, Friktion’s native structured products, offer sustainable income generation and volatility yield strategies. Designed for individuals and DAOs.",
+      "description": "",
+      "networkIds": [
+        "sol--101",
+        "evm--1",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:36.156Z",
+      "_subtitle": "270776190"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff61",
+      "name": "Element Finance",
+      "url": "https://www.element.fi/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_bdf1ed60-eae2-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Element Finance is a protocol that enables users to seek high fixed yield income in the DeFi market.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:38.383Z",
+      "_subtitle": "270776188"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff5d",
+      "name": "TokensFarm",
+      "url": "https://tokensfarm.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_f1147570-eadb-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "TokensFarm is a Multichain Farm-As-A-Service provider and marketplace across multiple chains. Creating, deploying, & hosting smart contract farms based on a dynamic APY. No coding needed! Increase your tokens liquidity, exposure and reduce sell pressure with TokensFarm marketplace.",
+      "description": "",
+      "networkIds": [
+        "evm--56",
+        "evm--137",
+        "evm--1",
+        "evm--250",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:37.119Z",
+      "_subtitle": "270776187"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff60",
+      "name": "Hashflow",
+      "url": "https://www.hashflow.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_d7ac2930-eae4-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "The most powerful DeFi trading experience. Tight spreads. Zero slippage. MEV-resistant",
+      "description": "",
+      "networkIds": [
+        "evm--56",
+        "evm--1",
+        "evm--43114",
+        "evm--137",
+        "evm--42161"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:37.907Z",
+      "_subtitle": "270776186"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff5c",
+      "name": "Swim Protocol",
+      "url": "https://swim.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_611a6560-eadb-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Swim is a multi-chain AMM for native assets, designed to make bridging as easy as possible.",
+      "description": "",
+      "networkIds": [
+        "sol--101",
+        "evm--1",
+        "evm--56",
+        "evm--137",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:30.475Z",
+      "_subtitle": "270776185"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff5e",
+      "name": "Connext",
+      "url": "https://bridge.connext.network/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_71ae4c80-bf06-11ec-ba38-21e4f24b3984.png.png",
+      "status": "Listed",
+      "subtitle": "The most secure cross-chain bridging and interoperability protocol for general purpose messaging.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--137",
+        "evm--42161",
+        "evm--10",
+        "evm--250",
+        "evm--56",
+        "evm--288"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff24"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:30.756Z",
+      "_subtitle": "270776184"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4b",
+      "name": "Sablier",
+      "url": "https://sablier.finance/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_d89a8b60-e874-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Stream money on the Internet!",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--43114",
+        "evm--56",
+        "evm--10",
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff27",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:22.210Z",
+      "_subtitle": "270776183"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4a",
+      "name": "DeFi Saver",
+      "url": "https://defisaver.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_88924ac0-e871-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "DeFi Saver is an advanced decentralized finance management dashboard with support for MakerDAO, Comp",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--42161",
+        "evm--10"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff29",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:21.538Z",
+      "_subtitle": "270776181"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff59",
+      "name": "Octus Bridge",
+      "url": "https://octusbridge.io/bridge??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_569ff890-ead9-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "DAO-controlled bridges facilitate fast cross-chain transfers in any direction within a single interface.",
+      "description": "",
+      "networkIds": [
+        "evm--56",
+        "evm--1",
+        "evm--250",
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:29.905Z",
+      "_subtitle": "270776182"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff52",
+      "name": "MM Optimizer",
+      "url": "https://vaults.polymm.finance/vault??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_3869b4a0-2379-11ed-b995-d5fa1439245e.webp.webp",
+      "status": "Listed",
+      "subtitle": "Earn high APY by staking in our auto-compounding vaults that helps you save gas fees while maximizing your yields on Polygon.",
+      "description": "",
+      "networkIds": [
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:27.019Z",
+      "_subtitle": "270776180"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff57",
+      "name": "Euler Finance",
+      "url": "https://www.euler.finance/#/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_e6945fb0-69ea-11ec-9d26-85f1b63f7fbd.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Euler is a permissionless money market protocol on Ethereum, democratising the assets people can lend and borrow.",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff29",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:28.853Z",
+      "_subtitle": "270776179"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff58",
+      "name": "Hop.Exchange",
+      "url": "https://app.hop.exchange/send?token=USDC&?utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_7abe29a0-1b71-11ec-b749-09299a4f8b9a.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "The ETH L2 cross-chain bridge supports users to quickly send tokens from L1 to L2.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--137",
+        "evm--42161",
+        "evm--10"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff2a",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:29.427Z",
+      "_subtitle": "270776178"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff54",
+      "name": "Atrix",
+      "url": "https://atrix.finance/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_5d4dbc90-4601-11ec-9825-d77d8945771f.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "A Serum-based AMM on Solana allowing for permissionless liquidity and farming.",
+      "description": "",
+      "networkIds": [
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:28.084Z",
+      "_subtitle": "270776177"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff53",
+      "name": "ioTube",
+      "url": "https://iotube.org/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_bf6e1b60-eb09-11ec-8629-f114182c14b1.png.png",
+      "status": "Listed",
+      "subtitle": "ioTube is the decentralized bridge for connecting Ethereum, Binance Smart Chain, Polygon (Matic), and IoTeX. ioTube enables bi-directional exchange of tokens between IoTeX, Ethereum, Binance Smart Chain, and now Polygon!",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--56",
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:27.523Z",
+      "_subtitle": "270776176"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff51",
+      "name": "Across",
+      "url": "https://across.to/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_d7118c90-46b1-11ec-8fed-3f4eb4582bab.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Across is a cross-chain bridge that prides itself on its speed, security and low fees.",
+      "description": "",
+      "networkIds": [
+        "evm--42161",
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff27",
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:26.414Z",
+      "_subtitle": "270776175"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff50",
+      "name": "Francium",
+      "url": "https://francium.io/app/invest/farm??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_55d09110-202a-11ec-b08f-6d2b2c1d64fb.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Earn more money with DeFi strategies on Solara.",
+      "description": "",
+      "networkIds": [
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff29",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:25.660Z",
+      "_subtitle": "270776174"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4f",
+      "name": "ChainPort",
+      "url": "https://www.chainport.io/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_21d36d30-e873-11ec-8e86-53798d1a9b70.png.png",
+      "status": "Listed",
+      "subtitle": "ChainPort is a next-gen blockchain bridge that provides custodian-level security with full  interoperability. This allows flexible instant hops, across chains at a click of a button.",
+      "description": "",
+      "networkIds": [
+        "evm--137",
+        "evm--56",
+        "evm--1",
+        "evm--43114",
+        "evm--250"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff28",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:24.895Z",
+      "_subtitle": "270776173"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4d",
+      "name": "Quarry",
+      "url": "https://app.quarry.so/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_56a03b20-e872-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "The easiest place to discover, launch, and farm DeFi liquidity mines on Solana.",
+      "description": "",
+      "networkIds": [
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:23.486Z",
+      "_subtitle": "270776171"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4e",
+      "name": "Set Protocol",
+      "url": "https://www.tokensets.com/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_97799220-e874-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "TokenSets helps you easily manage your crypto and enhance your portfolio with automated asset manage",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--137",
+        "evm--10",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [
+        "634fa057b09822e6cc87303a",
+        "63522a884a8ed11c5aafe849"
+      ],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:23.982Z",
+      "_subtitle": "270776172"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff4c",
+      "name": "Opyn",
+      "url": "https://www.opyn.co/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_b2400730-0fc4-11ec-85da-ef2dcd085795.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "DeFi Insurance",
+      "description": "",
+      "networkIds": [
+        "evm--1"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:22.732Z",
+      "_subtitle": "270776170"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff45",
+      "name": "Arrakis Finance",
+      "url": "https://www.arrakis.finance/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_041aa5d0-e86c-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Arrakis is a protocol specialized in centralized/active liquidity management. By creating a curated marketplace of novel tokenized LP strategies, Arrakis facilitates deep liquidity and optimizes LP returns in its vaults.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--250",
+        "evm--137"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [
+        "63522a884a8ed11c5aafe849",
+        "634fa057b09822e6cc87303a"
+      ],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:19.233Z",
+      "_subtitle": "270776168"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff47",
+      "name": "Parallel Finance",
+      "url": "https://app.parallel.fi/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_5c1fa270-3bb1-11ec-879b-4d8cc72977d7.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "Parallel Finance is a Decentralized Money Market Protocol that offers lending, staking, and borrowing in the Polkadot ecosystem. Depositors can lend and stake simultaneously to earn double yield on their staked coins, and borrowers can collateralize to borrow.",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "sol--101"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff24"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:19.774Z",
+      "_subtitle": "270776167"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff46",
+      "name": "Portal Bridge",
+      "url": "https://www.portalbridge.com/#/transfer??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_3c7da7f0-e86d-11ec-8e86-53798d1a9b70.jpeg.jpeg",
+      "status": "Listed",
+      "subtitle": "A token bridge built on Wormhole",
+      "description": "",
+      "networkIds": [
+        "evm--137",
+        "sol--101",
+        "evm--56",
+        "evm--1",
+        "evm--250",
+        "evm--43114"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa07920ec3e25ecd1ff25"
+      ],
+      "categoryIds": [],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:14.954Z",
+      "_subtitle": "270776165"
+    },
+    {
+      "_id": "634fa07920ec3e25ecd1ff48",
+      "name": "Poly Network",
+      "url": "https://www.poly.network/??utm_source=onekey",
+      "logoURL": "https://nft.onekey-asset.com/admin/u_b_1748f2c0-b860-11eb-a454-518d4af9bad3.png.png",
+      "status": "Listed",
+      "subtitle": "Poly Network is built to implement interoperability between multiple chains in order to build the next generation internet infrastructure. ",
+      "description": "",
+      "networkIds": [
+        "evm--1",
+        "evm--56",
+        "evm--128",
+        "evm--10",
+        "evm--137",
+        "evm--66",
+        "evm--43114",
+        "evm--42161",
+        "evm--250",
+        "evm--288"
+      ],
+      "tagIds": [
+        "634fa07920ec3e25ecd1ff24",
+        "634fa07920ec3e25ecd1ff25",
+        "634fa07920ec3e25ecd1ff26",
+        "634fa053b09822e6cc87301a"
+      ],
+      "categoryIds": [
+        "634fa057b09822e6cc873040",
+        "63522a884a8ed11c5aafe849"
+      ],
+      "createdAt": "2022-10-19T07:00:09.843Z",
+      "updatedAt": "2023-07-12T12:46:20.236Z",
+      "_subtitle": "270776166"
+    }
+  ]
+]

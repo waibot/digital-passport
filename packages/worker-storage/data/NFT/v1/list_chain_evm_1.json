@@ -1,0 +1,133 @@
+[
+  {
+    "success": true,
+    "data": [
+      {
+        "contractAddress": "0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401",
+        "contractName": "NameWrapper",
+        "ownsTotal": 1,
+        "description": "Ethereum Name Service (ENS) domains are secure domain names for the decentralized world. ENS domains provide a way for users to map human readable names to blockchain and non-blockchain resources, like Ethereum addresses, IPFS hashes, or website URLs. ENS domains can be bought and sold on secondary markets.",
+        "floorPrice": 0.0008,
+        "logoUrl": "https://logo.nftscan.com/logo/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401.png",
+        "verified": false,
+        "itemsTotal": 85907,
+        "openseaVerified": true,
+        "royalty": 0,
+        "assets": [
+          {
+            "type": "EVM",
+            "tokenAddress": null,
+            "contractAddress": "0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401",
+            "contractName": "NameWrapper",
+            "contractTokenId": "0x8bc6a1b7cdf26891397f99051bd2305d35664dfff080c7fe02e77d76a899f4c9",
+            "tokenId": "63222437808420962301404778764209419205480461766560086218039246059825260000457",
+            "ercType": "erc1155",
+            "amount": "1",
+            "owner": null,
+            "tokenUri": "https://metadata.ens.domains/mainnet/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401/63222437808420962301404778764209419205480461766560086218039246059825260000457",
+            "contentType": "image/svg",
+            "imageUri": "https://metadata.ens.domains/mainnet/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401/0x8bc6a1b7cdf26891397f99051bd2305d35664dfff080c7fe02e77d76a899f4c9/image",
+            "contentUri": "https://metadata.ens.domains/mainnet/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401/0x8bc6a1b7cdf26891397f99051bd2305d35664dfff080c7fe02e77d76a899f4c9/image",
+            "nftscanUri": null,
+            "mintPrice": null,
+            "mintTimestamp": 1690911503000,
+            "latestTradePrice": null,
+            "latestTradeSymbol": null,
+            "assetAttributes": [],
+            "name": "sajadsh.eth",
+            "description": "sajadsh.eth, an ENS name.",
+            "attributes": [
+              {
+                "traitType": "Created Date",
+                "value": 1690911503000
+              },
+              {
+                "traitType": "Length",
+                "value": 7
+              },
+              {
+                "traitType": "Segment Length",
+                "value": 7
+              },
+              {
+                "traitType": "Character Set",
+                "value": "letter"
+              },
+              {
+                "traitType": "Registration Date",
+                "value": 1690911503000
+              },
+              {
+                "traitType": "Expiration Date",
+                "value": 1722447503000
+              },
+              {
+                "traitType": "Namewrapper Fuse States",
+                "value": {
+                  "parent": {
+                    "PARENT_CANNOT_CONTROL": true,
+                    "CAN_EXTEND_EXPIRY": false,
+                    "IS_DOT_ETH": true,
+                    "unnamed": {
+                      "524288": false,
+                      "1048576": false,
+                      "2097152": false,
+                      "4194304": false,
+                      "8388608": false,
+                      "16777216": false,
+                      "33554432": false,
+                      "67108864": false,
+                      "134217728": false,
+                      "268435456": false,
+                      "536870912": false,
+                      "1073741824": false,
+                      "2147483648": false
+                    }
+                  },
+                  "child": {
+                    "CANNOT_UNWRAP": false,
+                    "CANNOT_BURN_FUSES": false,
+                    "CANNOT_TRANSFER": false,
+                    "CANNOT_SET_RESOLVER": false,
+                    "CANNOT_SET_TTL": false,
+                    "CANNOT_CREATE_SUBDOMAIN": false,
+                    "CANNOT_APPROVE": false,
+                    "CAN_DO_EVERYTHING": true,
+                    "unnamed": {
+                      "128": false,
+                      "256": false,
+                      "512": false,
+                      "1024": false,
+                      "2048": false,
+                      "4096": false,
+                      "8192": false,
+                      "16384": false,
+                      "32768": false
+                    }
+                  }
+                }
+              },
+              {
+                "traitType": "Namewrapper Expiry Date",
+                "value": 1730223503000
+              },
+              {
+                "traitType": "Namewrapper State",
+                "value": "Emancipated"
+              }
+            ],
+            "image": {
+              "source": "https://nft.onekey-asset.com/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401/0x8bc6a1b7cdf26891397f99051bd2305d35664dfff080c7fe02e77d76a899f4c9/source",
+              "thumbnail": "https://nft.onekey-asset.com/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401/0x8bc6a1b7cdf26891397f99051bd2305d35664dfff080c7fe02e77d76a899f4c9/thumbnail"
+            },
+            "collection": {
+              "contractName": "NameWrapper",
+              "logoUrl": "https://logo.nftscan.com/logo/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401.png"
+            },
+            "collectionId": "0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401"
+          }
+        ]
+      }
+    ]
+  }
+]
