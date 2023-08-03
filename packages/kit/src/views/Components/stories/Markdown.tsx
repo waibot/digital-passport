@@ -3,7 +3,6 @@ import { useCallback, useState } from 'react';
 import {
   Box,
   Button,
-  Center,
   Divider,
   Markdown,
   SceneMap,
@@ -11,11 +10,10 @@ import {
   TabView,
 } from '@onekeyhq/components';
 
-import { ACCOUNT_SELECTOR_CHANGE_ACCOUNT_CLOSE_DRAWER_DELAY } from '../../../components/NetworkAccountSelector/consts';
 import { wait } from '../../../utils/helper';
 
-const MarkdownGallery = () => {
-  const md = `
+let isLoading = false;
+const md = `
   # OneKey App Monorepo [English]
 
   ## 🌍 Environment Configuration
@@ -128,9 +126,9 @@ const MarkdownGallery = () => {
   1. app 无法启动
   
   通过根目录下的 \`yarn native\` 中 \`--reset-cache\` 命令清除打包工具缓存。同时配合根目录下命令 \`yarn clean\` 清除所有依赖及生成文件后重新执行 \`yarn\` 安装依赖。`;
-  const Md1 = () => (
-    <Box width="100%" p={2}>
-      <Markdown>{`
+const Md1 = () => (
+  <Box width="100%" p={2}>
+    <Markdown>{`
 js demo:
 \`\`\`javascript
 function foo(){
@@ -138,8 +136,8 @@ function foo(){
 }
 \`\`\`
       `}</Markdown>
-      <Divider my="2" />
-      <Markdown>{`
+    <Divider my="2" />
+    <Markdown>{`
       
    假设我们有一个n维向量函数 $\\mathbf{x}(t)$ 的微分方程，其中 $\\mathbf{x}(t) = [x_1(t), x_2(t), ..., x_n(t)]^T$。我们有：
 
@@ -150,66 +148,64 @@ $$
 其中 $A$ 是一个 $n \\times n$ 的矩阵，$\\mathbf{f}(t)$ 是一个已知的向量函数，$t$ 是时间变量。这是一类常见的线性微分方程系统的形式。
 
       `}</Markdown>
-    </Box>
-  );
-  let isLoading = false;
-  const Md2 = () => {
-    const [content, setContent] = useState(md);
-    const onPress = useCallback(async () => {
-      if (isLoading) {
-        return;
+  </Box>
+);
+const Md2 = () => {
+  const [content, setContent] = useState(md);
+  const onPress = useCallback(async () => {
+    if (isLoading) {
+      return;
+    }
+    isLoading = true;
+    setContent('');
+    const mdArr = md.split('');
+    let tempTxt = '';
+    for (let i = 0; i < mdArr.length; i += 1) {
+      if (mdArr[i] === ' ') {
+        await wait(100);
+      } else {
+        await wait(1);
       }
-      isLoading = true;
-      setContent('');
-      const mdArr = md.split('');
-      let tempTxt = '';
-      for (let i = 0; i < mdArr.length; i += 1) {
-        if (mdArr[i] === ' ') {
-          await wait(100);
-        } else {
-          await wait(1);
-        }
-        tempTxt += mdArr[i];
-        setContent(tempTxt);
-      }
-      isLoading = false;
-    }, [content]);
-    return (
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={{ height: '100%' }}
-      >
-        <Box width="100%" p={2}>
-          <Button onPress={onPress} type="primary" mb="2">
-            TypeWrite
-          </Button>
-          <Markdown>{content}</Markdown>
-        </Box>
-      </ScrollView>
-    );
-  };
+      tempTxt += mdArr[i];
+      setContent(tempTxt);
+    }
+    isLoading = false;
+  }, []);
   return (
-    <Box flex={1}>
-      <TabView
-        paddingX={16}
-        autoWidth
-        routes={[
-          {
-            key: 'md2',
-            title: 'LongText',
-          },
-          {
-            key: 'md1',
-            title: 'Basic',
-          },
-        ]}
-        renderScene={SceneMap({
-          md1: Md1,
-          md2: Md2,
-        })}
-      />
-    </Box>
+    <ScrollView
+      contentInsetAdjustmentBehavior="automatic"
+      style={{ height: '100%' }}
+    >
+      <Box width="100%" p={2}>
+        <Button onPress={onPress} type="primary" mb="2">
+          TypeWrite
+        </Button>
+        <Markdown>{content}</Markdown>
+      </Box>
+    </ScrollView>
   );
 };
+const MarkdownGallery = () => (
+  <Box flex={1}>
+    <TabView
+      paddingX={16}
+      autoWidth
+      routes={[
+        {
+          key: 'md2',
+          title: 'LongText',
+        },
+        {
+          key: 'md1',
+          title: 'Basic',
+        },
+      ]}
+      renderScene={SceneMap({
+        md1: Md1,
+        md2: Md2,
+      })}
+    />
+  </Box>
+);
 
 export default MarkdownGallery;

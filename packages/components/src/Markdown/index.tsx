@@ -80,7 +80,7 @@ const Markdown: FC = ({ children }) => {
           height: 1,
         },
       }),
-    [bodyTextColor, headingColor, horizontalRulesColor, isSmallScreen],
+    [bg, bodyTextColor, headingColor, horizontalRulesColor, isSmallScreen],
   );
 
   return (
