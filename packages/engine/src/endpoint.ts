@@ -3,9 +3,7 @@ const endpointsMap: Record<
   { prd: string; test: string }
 > = {
   fiat: {
-    // prd: 'https://api.onekeycn.com/api',
     prd: 'https://dp-api.wai.chat/api',
-    // test: 'https://api-sandbox.onekeytest.com/api',
     test: 'http://localhost:4083/api',
   },
   wss: {
@@ -13,8 +11,8 @@ const endpointsMap: Record<
     test: 'wss://api-sandbox.onekeytest.com',
   },
   covalent: {
-    prd: 'https://node.onekey.so/covalent/client1-HghTg3a33',
-    test: 'https://node.onekeytest.com/covalent/client1-HghTg3a33',
+    prd: 'https://dp-api.wai.chat/covalent/client1-HghTg3a33',
+    test: 'http://localhost:4083/covalent/client1-HghTg3a33',
   },
   mempool: {
     prd: 'https://node.onekey.so/mempool',
