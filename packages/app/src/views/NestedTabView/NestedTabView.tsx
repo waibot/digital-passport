@@ -127,6 +127,7 @@ const NestedTabView: ForwardRefRenderFunction<
     setPageIndex,
   }));
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const canOpenDrawer = () => {
     if (!platformEnv.isNativeAndroid) {
       return lastTransX.value > drawerOpenDistance;
@@ -162,7 +163,7 @@ const NestedTabView: ForwardRefRenderFunction<
 
     // restore the onPress function
     enableOnPressAnim.value = withTiming(1, { duration: 200 });
-  }, [enableOpenDrawer, tabIndex, resetGesture, lastTransX, openDrawer]);
+  }, [canOpenDrawer, enableOpenDrawer, tabIndex, resetGesture, openDrawer]);
 
   const pan = useMemo(() => {
     const basePan = Gesture.Pan();
@@ -233,6 +234,7 @@ const NestedTabView: ForwardRefRenderFunction<
     offsetX,
     onEnd,
     resetGesture,
+    startX,
     startY,
     tabIndex,
   ]);

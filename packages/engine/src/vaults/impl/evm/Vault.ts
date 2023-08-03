@@ -1875,10 +1875,15 @@ export default class Vault extends VaultBase {
     const historyTxList = await Promise.all(
       hashes.map(async (hash, index) => {
         // pending tx rpc return null
-        let encodedTx = rpcTxList.find((item) => item?.hash === hash);
+        // @ts-ignore
+        let encodedTx: IEncodedTxEvm | undefined = rpcTxList.find(
+          (item) => item?.hash === hash,
+        );
         const isRpcTx = Boolean(encodedTx);
         // *** update rpcTx tx.data from tx.input
+        // @ts-ignore
         if (encodedTx && isRpcTx && encodedTx.input && !encodedTx.data) {
+          // @ts-ignore
           encodedTx.data = encodedTx.input;
         }
 
@@ -1888,7 +1893,6 @@ export default class Vault extends VaultBase {
         if (historyTx?.decodedTx?.isFinal) {
           return null;
         }
-
         encodedTx =
           encodedTx ||
           (historyTx?.decodedTx?.encodedTx as IEncodedTxEvm | undefined);

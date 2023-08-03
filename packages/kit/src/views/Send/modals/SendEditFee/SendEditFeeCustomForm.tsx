@@ -671,6 +671,7 @@ export function SendEditFeeCustomForm(props: ICustomFeeFormProps) {
       </Form>
     );
   }, [
+    priorityBooster,
     autoConfirmAfterFeeSaved,
     control,
     feeInfoPayload?.info.feeDecimals,

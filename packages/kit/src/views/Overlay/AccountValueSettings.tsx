@@ -91,7 +91,7 @@ function AccountBalanceDetailsPanel() {
         // noop
       }
     })();
-  }, [accountId, networkId]);
+  }, [accountId, intl, networkId]);
 
   if (!balanceDetails && !isLoading) {
     // this network may not implement fetchBalanceDetails API

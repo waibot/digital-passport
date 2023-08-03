@@ -283,7 +283,7 @@ const Header: FC<HeaderProps> = ({
     if (nameOrAddress.length === 0) {
       return false;
     }
-    if (inputLoading === true) {
+    if (inputLoading) {
       return false;
     }
     return true;
