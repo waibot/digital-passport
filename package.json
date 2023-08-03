@@ -108,6 +108,7 @@
     "long": "^5.2.3",
     "memoizee": "^0.4.15",
     "mime-types": "^2.1.35",
+    "minimatch": "^9.0.3",
     "minimist": "^1.2.8",
     "mkdirp": "^3.0.1",
     "mock-aws-s3": "^4.0.2",

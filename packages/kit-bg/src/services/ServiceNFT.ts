@@ -438,10 +438,9 @@ class ServiceNFT extends ServiceBase {
     const nfts = nftPortfolio?.[EOverviewScanTaskType.nfts] ?? [];
 
     const { engine } = this.backgroundApi;
-
     const results = await Promise.all(
       Object.entries(groupBy(nfts, 'networkId')).map(async ([key, list]) => {
-        const vault = await engine.getChainOnlyVault(key);
+        const vault = await engine.getChainOnlyVault(networkId);
         return vault.getUserNFTAssets({ serviceData: list as NFTListItems });
       }),
     );

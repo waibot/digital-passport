@@ -68,3 +68,49 @@ export class NftMarketLiveMintAction extends BaseOpenAPIRoute {
     return proxyRequest(request, data);
   }
 }
+
+export class NftMarketMarketCapMintAction extends BaseOpenAPIRoute {
+  static override schema = {
+    tags: ['NFT'],
+    parameters: {
+      limit: Query(Int, {
+        description: '',
+        example: '5',
+      }),
+      chain: Query(Str, {
+        description: '',
+        example: 'evm--1',
+      }),
+    },
+    responses: {
+      '200': {
+        schema: {},
+      },
+    },
+  };
+
+  override async handle(request: Request, data: Record<string, any>) {
+    return proxyRequest(request, data);
+  }
+}
+
+export class NftMarketPlaceListAction extends BaseOpenAPIRoute {
+  static override schema = {
+    tags: ['NFT'],
+    parameters: {
+      chain: Query(Str, {
+        description: '',
+        example: 'evm--1',
+      }),
+    },
+    responses: {
+      '200': {
+        schema: {},
+      },
+    },
+  };
+
+  override async handle(request: Request, data: Record<string, any>) {
+    return proxyRequest(request, data);
+  }
+}

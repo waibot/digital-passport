@@ -34,6 +34,6 @@ export class SimplePriceAction extends BaseOpenAPIRoute {
     if (data.contracts !== undefined && !data.contracts) {
       delete data.contracts;
     }
-    return proxyRequest(request, data);
+    return proxyRequest(request, data, true);
   }
 }
