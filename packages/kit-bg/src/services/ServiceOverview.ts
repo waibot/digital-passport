@@ -123,17 +123,19 @@ class ServiceOverview extends ServiceBase {
     if (!results) {
       return;
     }
-    const { pending } = results;
+    let { pending } = results;
+    pending = [];
     const dispatchActions = [];
     for (const scanType of uniq(
       pendingTasksForCurrentNetwork.map((n) => n.scanType),
     )) {
-      if (pending && !pending.find((p) => p.scanType === scanType)) {
+      if (!pending.find((p) => p.scanType === scanType)) {
         const { data, actions } = this.processNftPriceActions({
           networkId,
           accountId,
           results,
         });
+
         dispatchActions.push(...actions.map((a) => setNFTPrice(a)));
         await simpleDb.accountPortfolios.setAllNetworksPortfolio({
           key: dispatchKey,
@@ -143,7 +145,7 @@ class ServiceOverview extends ServiceBase {
       }
     }
 
-    if (pending && !pending?.length) {
+    if (!pending?.length) {
       const taskIdsWillRemove = pendingTasksForCurrentNetwork
         .map((t) => this.getTaksId(t))
         .filter((id) => !pending.find((p) => p.id === id));
@@ -352,6 +354,7 @@ class ServiceOverview extends ServiceBase {
       accountId,
       scanTypes,
     });
+
     if (!tasks.length) {
       return;
     }
