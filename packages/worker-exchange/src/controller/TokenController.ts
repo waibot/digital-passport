@@ -54,7 +54,7 @@ export class TokenBalancesAction extends BaseOpenAPIRoute {
   };
 
   override async handle(request: Request, data: Record<string, any>) {
-    return proxyRequest(request, data);
+    return proxyRequest(request, data, true);
   }
 }
 

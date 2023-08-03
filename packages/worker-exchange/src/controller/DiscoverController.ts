@@ -2,7 +2,43 @@ import { Query, Str } from '@cloudflare/itty-router-openapi';
 
 import BaseOpenAPIRoute from '@onekeyhq/server/src/base/BaseOpenAPIRoute';
 
-import { proxyRequest } from '../helpers/ProxyRequest';
+import KvCache from '../services/kv/KvCache';
+
+export class DiscoverGetListingDapps extends BaseOpenAPIRoute {
+  static override schema = {
+    tags: ['Discover'],
+    responses: {
+      '200': {
+        schema: {},
+      },
+    },
+  };
+
+  override async handle(request: Request, data: Record<string, any>) {
+    return [];
+  }
+}
+
+export class DiscoverSearchDapps extends BaseOpenAPIRoute {
+  static override schema = {
+    tags: ['Discover'],
+    parameters: {
+      keyword: Query(Str, {
+        description: '',
+        example: 'about:blank',
+      }),
+    },
+    responses: {
+      '200': {
+        schema: {},
+      },
+    },
+  };
+
+  override async handle(request: Request, data: Record<string, any>) {
+    return [];
+  }
+}
 
 export class DiscoverCompactListAction extends BaseOpenAPIRoute {
   static override schema = {
@@ -15,7 +51,7 @@ export class DiscoverCompactListAction extends BaseOpenAPIRoute {
   };
 
   override async handle(request: Request, data: Record<string, any>) {
-    return proxyRequest(request, data);
+    return (await KvCache.getInstance().get('discover_compact_list')) || {};
   }
 }
 
@@ -36,6 +72,35 @@ export class DiscoverDappsAction extends BaseOpenAPIRoute {
   };
 
   override async handle(request: Request, data: Record<string, any>) {
-    return proxyRequest(request, data);
+    const { categoryId } = data;
+    return (
+      (await KvCache.getInstance().get(
+        `discover_category_dapps_${categoryId}`,
+      )) || []
+    );
+  }
+}
+
+export class DiscoverTagDappsAction extends BaseOpenAPIRoute {
+  static override schema = {
+    tags: ['Discover'],
+    parameters: {
+      tagId: Query(Str, {
+        description: '',
+        example: '634fa07920ec3e25ecd1ff25',
+      }),
+    },
+    responses: {
+      '200': {
+        schema: {},
+      },
+    },
+  };
+
+  override async handle(request: Request, data: Record<string, any>) {
+    const { tagId } = data;
+    return (
+      (await KvCache.getInstance().get(`discover_tag_dapps_${tagId}`)) || []
+    );
   }
 }

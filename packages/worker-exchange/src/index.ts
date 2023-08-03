@@ -8,12 +8,18 @@ import {
   AppConfigToolsV2Action,
   MoonPayUrlAction,
   RevokeLogsAction,
+  SettingListAction,
 } from './controller/AppController';
+import { CovalentaTransactionsAction } from './controller/CovalentaApiController';
 import {
   DiscoverCompactListAction,
   DiscoverDappsAction,
+  DiscoverGetListingDapps,
+  DiscoverSearchDapps,
+  DiscoverTagDappsAction,
 } from './controller/DiscoverController';
 import { ExchangeRatesVsCurrencies } from './controller/ExchangeRatesController';
+import { LimitOrderQueryOrdersAction } from './controller/LimitOrderController';
 import { MarketCategoryAction } from './controller/MarketCategoryController';
 import { MarketChartAction } from './controller/MarketChartController';
 import { MarketDetailAction } from './controller/MarketDetailController';
@@ -28,20 +34,28 @@ import {
   NetworkLookupEnsNameAction,
 } from './controller/NetworkController';
 import {
+  NftAccountPnlAction,
+  NftAssetAction,
+  NftBatchAssetAction,
   NftCollectionAction,
   NftCollectionAssetsAction,
   NftCollectionAttributesAction,
   NftCollectionTransactionsAction,
   NftTransactionsAccountV2Action,
+  NftV2ListAction,
 } from './controller/NftController';
 import {
   NftMarketCollectionAction,
   NftMarketLiveMintAction,
+  NftMarketMarketCapMintAction,
+  NftMarketPlaceListAction,
   NftMarketRankingAction,
 } from './controller/NftMarketController';
 import {
   NotificationAccountDynamicAction,
-  NotificationFavoriteAction,
+  NotificationAccountDynamicSaveAction,
+  NotificationFavoriteDeleteAction,
+  NotificationFavoriteSaveAction,
 } from './controller/NotificationController';
 import {
   OverviewQueryAllAction,
@@ -65,6 +79,7 @@ const iRouter = new IRouter({
   title: 'Worker Exchange',
   version: '1.0.1',
 }).setRoute((router: any) => {
+  router.get('/api/setting/list', SettingListAction);
   router.get('/api/config/app', AppConfigAction);
   router.put('/api/config/sync', AppConfigSyncAction);
   router.get('/api/config/tools/v2', AppConfigToolsV2Action);
@@ -86,19 +101,29 @@ const iRouter = new IRouter({
   router.get('/api/NFT/market/collection', NftMarketCollectionAction);
   router.get('/api/NFT/market/ranking', NftMarketRankingAction);
   router.get('/api/NFT/market/liveMint', NftMarketLiveMintAction);
+  router.get('/api/NFT/market/marketCap', NftMarketMarketCapMintAction);
 
+  router.get('/api/NFT/marketPlace/list', NftMarketPlaceListAction);
+  router.get('/api/NFT/account/pnl', NftAccountPnlAction);
   router.get('/api/NFT/collection', NftCollectionAction);
+  router.get('/api/NFT/asset', NftAssetAction);
+  router.get('/api/NFT/v2/list', NftV2ListAction);
   router.get('/api/NFT/collection/assets', NftCollectionAssetsAction);
+
   router.get(
     '/api/NFT/collection/transactions',
     NftCollectionTransactionsAction,
   );
   router.get('/api/NFT/collection/attributes', NftCollectionAttributesAction);
+  router.post('/api/NFT/batchAsset', NftBatchAssetAction);
 
   router.get('/api/NFT/transactions/accountV2', NftTransactionsAccountV2Action);
 
   router.get('/api/discover/compact_list', DiscoverCompactListAction);
   router.get('/api/discover/get_listing_category_dapps', DiscoverDappsAction);
+  router.get('/api/discover/get_listing_tag_dapps', DiscoverTagDappsAction);
+  router.get('/api/discover/search_dapps', DiscoverSearchDapps);
+  router.post('/api/discover/get_listing_dapps', DiscoverGetListingDapps);
 
   router.get('/api/translations/all', TranslationsAllAction);
 
@@ -123,12 +148,25 @@ const iRouter = new IRouter({
 
   router.get('/api/moonpay/url', MoonPayUrlAction);
 
-  router.post('/api/notification/favorite', NotificationFavoriteAction);
-  router.delete('/api/notification/favorite', NotificationFavoriteAction);
+  router.post('/api/notification/favorite', NotificationFavoriteSaveAction);
+  router.delete('/api/notification/favorite', NotificationFavoriteDeleteAction);
+
+  router.get(
+    '/covalent/client1-HghTg3a33/v1/1/address/:address/transactions_v2/',
+    CovalentaTransactionsAction,
+  );
+
   router.get(
     '/api/notification/account-dynamic',
     NotificationAccountDynamicAction,
   );
+
+  router.post(
+    '/api/notification/account-dynamic',
+    NotificationAccountDynamicSaveAction,
+  );
+
+  router.get('/api/limit_order/query_orders', LimitOrderQueryOrdersAction);
 });
 
 const worker = {
