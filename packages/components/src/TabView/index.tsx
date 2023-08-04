@@ -18,6 +18,7 @@ type State = NavigationState<TabViewRoute>;
 export type Props = {
   autoWidth?: boolean;
   paddingX?: number;
+  currentIndex?: number;
   onIndexChange?: (index: number) => void;
   routes: TabViewRoute[];
   renderScene: (
@@ -30,13 +31,14 @@ export type Props = {
 const TabView: FC<Props> = ({
   onIndexChange,
   routes,
+  currentIndex,
   renderScene,
   autoWidth = false,
   paddingX = 0,
 }) => {
   const layout = useWindowDimensions();
 
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(currentIndex || 0);
   const [myRoutes] = useState(routes);
   const tabWidth = (layout.width - paddingX * 2) / myRoutes.length;
   const bgColor = useThemeValue('background-default');
