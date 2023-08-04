@@ -5,8 +5,9 @@ let prevErrorStack: string | undefined;
 const autoLogger = {
   error: (error: Error) => {
     if (
-      error.stack !== prevErrorStack &&
-      !(error instanceof NotAutoPrintError)
+      error &&
+      !(error instanceof NotAutoPrintError) &&
+      error.stack !== prevErrorStack
     ) {
       console.error('AUTO LOGS:', error);
       prevErrorStack = error.stack;
