@@ -26,6 +26,8 @@ const InpageProviderWebView: FC<InpageProviderWebViewProps> = forwardRef(
       onSrcChange,
       receiveHandler,
       allowpopups,
+      style,
+      partition,
     }: InpageProviderWebViewProps,
     ref: any,
   ) => {
@@ -40,6 +42,8 @@ const InpageProviderWebView: FC<InpageProviderWebViewProps> = forwardRef(
     return (
       <DesktopWebView
         id={id}
+        partition={partition}
+        style={style}
         ref={setWebViewRef}
         src={src}
         onSrcChange={onSrcChange}

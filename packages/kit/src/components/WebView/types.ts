@@ -3,6 +3,8 @@ import type { WebViewSource } from 'react-native-webview/lib/WebViewTypes';
 
 export interface InpageProviderWebViewProps extends InpageWebViewProps {
   id?: string;
+  partition?: string;
+  style?: Record<string, any>;
   onNavigationStateChange?: (event: any) => void;
   onShouldStartLoadWithRequest?: (event: any) => boolean;
   allowpopups?: boolean;

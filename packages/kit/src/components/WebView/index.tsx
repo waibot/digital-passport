@@ -20,6 +20,8 @@ import type {
 interface WebViewProps {
   id?: string;
   src?: string;
+  partition?:string,
+  style?:Record<string, any>;
   onSrcChange?: (src: string) => void;
   openUrlInExt?: boolean;
   onWebViewRef?: (ref: IWebViewWrapperRef | null) => void;
@@ -34,6 +36,7 @@ interface WebViewProps {
   onContentLoaded?: () => void; // currently works in NativeWebView only
   onOpenWindow?: (event: WebViewOpenWindowEvent) => void;
   androidLayerType?: 'none' | 'software' | 'hardware';
+  receiveHandler?: IJsBridgeReceiveHandler;
 }
 
 const WebView: FC<WebViewProps> = ({
@@ -43,12 +46,12 @@ const WebView: FC<WebViewProps> = ({
   onWebViewRef = () => {},
   customReceiveHandler,
   containerProps,
+  receiveHandler,
   ...rest
 }) => {
-  const receiveHandler = useCallback<IJsBridgeReceiveHandler>(
+  const receiveHandler1 = useCallback<IJsBridgeReceiveHandler>(
     async (payload, hostBridge) => {
       const result = await backgroundApiProxy.bridgeReceiveHandler(payload);
-
       // return customReceiveHandler() response not supported yet
       await customReceiveHandler?.(payload, hostBridge);
 
@@ -75,7 +78,7 @@ const WebView: FC<WebViewProps> = ({
         ref={onWebViewRef}
         src={src}
         allowpopups={allowpopups}
-        receiveHandler={receiveHandler}
+        receiveHandler={receiveHandler || receiveHandler1}
         {...rest}
       />
     </Box>
