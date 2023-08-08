@@ -34,7 +34,6 @@ function MainScreen() {
         .catch();
     }
   }, [dispatch, reduxReady]);
-
   return (
     <Box ref={setMainScreenDom} w="full" h="full">
       <Drawer />

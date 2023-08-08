@@ -1,0 +1,12 @@
+diff --git a/node_modules/@onekeyfe/cross-inpage-provider-types/dist/index.d.ts b/node_modules/@onekeyfe/cross-inpage-provider-types/dist/index.d.ts
+index 3864641..413b5fb 100644
+--- a/node_modules/@onekeyfe/cross-inpage-provider-types/dist/index.d.ts
++++ b/node_modules/@onekeyfe/cross-inpage-provider-types/dist/index.d.ts
+@@ -71,6 +71,7 @@ export declare type IJsBridgeCallback = {
+ };
+ export declare type IJsBridgeMessagePayload = {
+     id?: number;
++    accountIndex?: number;
+     data?: unknown | IJsonRpcRequest;
+     error?: unknown;
+     remoteId?: number | string | null;

@@ -142,7 +142,7 @@ const NavigationApp = () => {
   return (
     <NavigationContainer
       documentTitle={{
-        formatter: () => 'Digital Passport',
+        formatter: () => 'DigitalPassport',
       }}
       onReady={() => {
         routeNameRef.current =

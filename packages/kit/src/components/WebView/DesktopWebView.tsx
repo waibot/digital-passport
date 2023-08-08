@@ -287,7 +287,7 @@ const DesktopWebView = forwardRef(
               left: devToolsAtLeft ? 0 : undefined,
             }}
             onClick={() => {
-              setDevToolsAtLeft(!devToolsAtLeft);
+              // setDevToolsAtLeft(!devToolsAtLeft);
               webviewRef.current?.openDevTools();
             }}
           >

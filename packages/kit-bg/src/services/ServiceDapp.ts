@@ -99,12 +99,23 @@ class ServiceDapp extends ServiceBase {
   getActiveConnectedAccounts({
     origin,
     impl,
+    accountIndex,
   }: {
     origin: string;
     impl: string;
+    accountIndex?: number;
   }): DappSiteConnection[] {
     const { appSelector } = this.backgroundApi;
-    const { accountAddress, accountId } = getActiveWalletAccount();
+    const activeWalletAccount = getActiveWalletAccount();
+    let { accountAddress, accountId } = activeWalletAccount;
+    if (accountIndex !== undefined) {
+      if (activeWalletAccount.accounts[accountIndex]) {
+        accountAddress = activeWalletAccount.accounts[accountIndex]!.address;
+        accountId = activeWalletAccount.accounts[accountIndex].id;
+      } else {
+        return [];
+      }
+    }
     const connections: DappSiteConnection[] = appSelector(
       (s) => s.dapp.connections,
     );
@@ -120,11 +131,19 @@ class ServiceDapp extends ServiceBase {
       .filter(
         (item) => {
           try {
-            return (
-              // only match hostname
-              new URL(item.site.origin).hostname === new URL(origin).hostname &&
-              item.networkImpl === impl
-            );
+            if (accountIndex !== undefined) {
+              return (
+                new URL(item.site.origin).hostname === new URL(origin).hostname &&
+                item.networkImpl === impl &&
+                item.address === accountAddress
+              );
+            } else {
+              return (
+                // only match hostname
+                new URL(item.site.origin).hostname === new URL(origin).hostname &&
+                item.networkImpl === impl
+              );
+            }
           } catch {
             return false;
           }
@@ -406,6 +425,7 @@ class ServiceDapp extends ServiceBase {
       const sourceInfo: IDappSourceInfo = {
         id,
         origin: request.origin || '',
+        accountIndex: request.accountIndex,
         hostname: urlUtils.getHostNameFromUrl({ url: request.origin || '' }),
         scope: request.scope as any, // ethereum
         data: request.data as any,

@@ -239,11 +239,11 @@ const Connection = () => {
   const [rugConfirmDialogVisible, setRugConfirmDialogVisible] = useState(false);
   const intl = useIntl();
 
-  const { networkImpl, network, accountAddress, accountPubKey, account } =
-    useActiveWalletAccount();
-
   const { sourceInfo } = useDappParams();
-  const { origin, scope, id } = sourceInfo ?? defaultSourceInfo;
+  const { origin, scope, id, accountIndex } = sourceInfo ?? defaultSourceInfo;
+
+  const { networkImpl, network, accountAddress, accountPubKey, account } =
+    useActiveWalletAccount(accountIndex);
   const computedIsRug = useMemo(() => isRug(origin), [origin]);
   const hostname = useMemo(() => {
     try {

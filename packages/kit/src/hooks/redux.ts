@@ -99,6 +99,7 @@ export const useAutoUpdate = () => useAppSelector((s) => s.autoUpdate);
 export type IActiveWalletAccount = {
   wallet: IWallet | null;
   account: IAccount | null;
+  accounts: IAccount[];
   network: INetwork | null;
   externalWallet: IWallet | null;
   watchingWallet: IWallet | null;
@@ -176,6 +177,7 @@ export const {
   }
 
   return {
+    accounts: accounts || [],
     wallet: activeWallet,
     account: activeAccountInfo,
     network: activeNetwork,
@@ -191,7 +193,7 @@ export const {
   };
 });
 
-export function useActiveWalletAccount() {
+export function useActiveWalletAccount(accountIndex?: number) {
   const result = useActiveWalletAccountOrigin();
   const context = useTransactionSendContext();
 
@@ -210,6 +212,19 @@ export function useActiveWalletAccount() {
       // console.error(msg);
       throw new Error(msg);
     }
+  }
+
+  if (accountIndex !== undefined) {
+    const { accounts } = result;
+    const account = accounts[accountIndex];
+    const accountAddress = account?.address || '';
+    const accountPubKey = account?.pubKey || '';
+    return {
+      ...result,
+      account,
+      accountAddress,
+      accountPubKey,
+    };
   }
   return result;
 }
