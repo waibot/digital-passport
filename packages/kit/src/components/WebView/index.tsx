@@ -20,8 +20,8 @@ import type {
 interface WebViewProps {
   id?: string;
   src?: string;
-  partition?:string,
-  style?:Record<string, any>;
+  partition?: string;
+  style?: Record<string, any>;
   onSrcChange?: (src: string) => void;
   openUrlInExt?: boolean;
   onWebViewRef?: (ref: IWebViewWrapperRef | null) => void;

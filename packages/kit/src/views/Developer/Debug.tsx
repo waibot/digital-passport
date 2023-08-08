@@ -24,7 +24,10 @@ import { batchTransferContractAddress } from '@onekeyhq/engine/src/presets/batch
 import { INSCRIPTION_PADDING_SATS_VALUES } from '@onekeyhq/engine/src/vaults/impl/btc/inscribe/consts';
 import type { ISignedTxPro } from '@onekeyhq/engine/src/vaults/types';
 import backgroundApiProxy from '@onekeyhq/kit/src/background/instance/backgroundApiProxy';
-import { useActiveWalletAccount, useAppSelector } from '@onekeyhq/kit/src/hooks/redux';
+import {
+  useActiveWalletAccount,
+  useAppSelector,
+} from '@onekeyhq/kit/src/hooks/redux';
 import { ModalRoutes, RootRoutes } from '@onekeyhq/kit/src/routes/routesEnum';
 import type { RootRoutesParams } from '@onekeyhq/kit/src/routes/types';
 import platformEnv from '@onekeyhq/shared/src/platformEnv';

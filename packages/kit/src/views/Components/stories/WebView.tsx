@@ -14,22 +14,19 @@ const IframeView = () => (
   </Box>
 );
 
-const IWebView = () => {
+const IWebView = () => (
   // const navigation = useNavigation();
-  return (
-    <Box flex="1" bg="background-hovered">
-      {/*<Button*/}
-      {/*  onPress={() => {*/}
-      {/*    navigation.navigate('Components/Approval' as any);*/}
-      {/*  }}*/}
-      {/*>*/}
-      {/*  Send Transaction*/}
-      {/*</Button>*/}
-      <WebView src="https://app.uniswap.org/#/swap" />
-    </Box>
-  );
-};
-
+  <Box flex="1" bg="background-hovered">
+    {/* <Button */}
+    {/*  onPress={() => { */}
+    {/*    navigation.navigate('Components/Approval' as any); */}
+    {/*  }} */}
+    {/* > */}
+    {/*  Send Transaction */}
+    {/* </Button> */}
+    <WebView src="https://app.uniswap.org/#/swap" />
+  </Box>
+);
 const Settings = () => (
   <Box flex="1" bg="background-hovered">
     <Box flex={1}>

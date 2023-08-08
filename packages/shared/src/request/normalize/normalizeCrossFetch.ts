@@ -128,7 +128,8 @@ export function normalizeCrossFetch({
       fetchOrigin
         // @ts-ignore
         .call(this, resource, options, ...others)
-        .then((res) => res.clone()).catch(e=>e)
+        .then((res) => res.clone())
+        .catch((e) => e)
     );
   };
   newFetch.isNormalizedByOneKey = true;
