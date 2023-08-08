@@ -44,11 +44,14 @@ const handleQueryAll = async (baseUrl: string, request: Request) => {
   const res = await fetch(req);
   const json = (await res.json()) as any;
   console.log('[res]', req.method, apiUrl, res.status, json);
+
   return {
-    nfts: json.data.map((row: any) => ({
-      networkId: chain,
-      ...row,
-    })),
+    nfts: json.success
+      ? json.data.map((row: any) => ({
+          networkId: chain,
+          ...row,
+        }))
+      : [],
   };
 };
 
