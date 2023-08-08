@@ -133,17 +133,17 @@ class ServiceDapp extends ServiceBase {
           try {
             if (accountIndex !== undefined) {
               return (
-                new URL(item.site.origin).hostname === new URL(origin).hostname &&
+                new URL(item.site.origin).hostname ===
+                  new URL(origin).hostname &&
                 item.networkImpl === impl &&
                 item.address === accountAddress
               );
-            } else {
-              return (
-                // only match hostname
-                new URL(item.site.origin).hostname === new URL(origin).hostname &&
-                item.networkImpl === impl
-              );
             }
+            return (
+              // only match hostname
+              new URL(item.site.origin).hostname === new URL(origin).hostname &&
+              item.networkImpl === impl
+            );
           } catch {
             return false;
           }
