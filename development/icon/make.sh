@@ -166,6 +166,8 @@ KIT_RES_DIR=$PROJECT_DIR/packages/kit/assets
 
 cp $CUR_DIR/ext/logo.svg $KIT_RES_DIR/splash.svg
 cp $CUR_DIR/ios/splash_1284x2778.png $KIT_RES_DIR/splash.png
+cp -a $CUR_DIR/ext/icon-128.png $EXT_RES_DIR/qrcode_logo.png
+
 
 ##=========>>> Components
 CP_RES_DIR=$PROJECT_DIR/packages/components/svg/illus
